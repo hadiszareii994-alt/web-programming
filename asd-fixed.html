@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>programming-web</title>
+<wbr/>بهترین اموزش دهنده ها
+    <div class="mn" id="mn"></div>
+<input id="09164972735" name="ahora" type="tel"/>
+<style>
+        .mn{
+color: #d400ff;
+        }
+    </style>
+<link href="image (7).jpeg" rel="icon"/>
+<link href="vv.css" rel="stylesheet"/>
+<link href="HN.PHP" rel="stylesheet"/>
+<div class="card">
+<h3>ویرایشگر HTML</h3>
+<textarea class="mh" id="editor">&lt;h1&gt;سلام دنیا&lt;/h1&gt;&lt;p&gt;اولین سایت من&lt;/p&gt;</textarea>
+<button class="vc" onclick="runCode()">اجرا</button>
+<iframe class="a" id="legacy-preview" srcdoc="&lt;h1&gt;سلام دنیا&lt;/h1&gt;&lt;p&gt;اولین سایت من&lt;/p&gt;"></iframe>
+</div>
+</head>
+<body>
+<div class="logo">برنامه نویسی وب سایت</div>
+<style>
+
+/* Advanced Purple Background */
+
+body {
+    background:
+        radial-gradient(circle at 15% 20%, #8b5cf6 0%, transparent 35%),
+        radial-gradient(circle at 85% 80%, #6d28d9 0%, transparent 40%),
+        linear-gradient(135deg, #090014, #1b0638, #100020);
+
+    background-size: 200% 200%;
+    animation: purpleBackground 12s ease infinite;
+
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+@keyframes purpleBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+    </style>
+<script>
+
+// ✨ Advanced Purple Particle Effect
+
+const canvas = document.createElement("canvas");
+canvas.id = "purple-particles";
+
+Object.assign(canvas.style, {
+    position: "fixed",
+    inset: "0",
+    width: "100%",
+    height: "100%",
+    pointerEvents: "none",
+    zIndex: "0"
+});
+
+document.body.appendChild(canvas);
+
+const ctx = canvas.getContext("2d");
+
+let particles = [];
+let mouse = { x: -1000, y: -1000 };
+
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+window.addEventListener("resize", resize);
+resize();
+
+window.addEventListener("mousemove", e => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+});
+
+class Particle {
+    constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2.5 + 1;
+        this.speedX = (Math.random() - 0.5) * 0.7;
+        this.speedY = (Math.random() - 0.5) * 0.7;
+        this.alpha = Math.random() * 0.6 + 0.3;
+    }
+
+    update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+
+        const dx = this.x - mouse.x;
+        const dy = this.y - mouse.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < 120) {
+            this.x += dx / 15;
+            this.y += dy / 15;
+        }
+
+        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+    }
+
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(190, 120, 255, ${this.alpha})`;
+        ctx.shadowBlur = 15;
+        ctx.shadowColor = "#a855f7";
+        ctx.fill();
+    }
+}
+
+for (let i = 0; i < 65; i++) {
+    particles.push(new Particle());
+}
+
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    particles.forEach(p => {
+        p.update();
+        p.draw();
+    });
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+    </script>
+<nav>
+<style>
+            .vc{
+                color: #ff0000;
+            }
+            .mh{
+                color: #73ff00;
+                .
+                    color: #ff00bf;
+                }
+                .a{
+                    color: #ff00c8;
+                }
+
+                }
+            }
+        </style>
+<div>
+<a href="#home">خانه</a><a href="#courses">آموزش</a>
+<a href="#tools">ابزارها</a><a href="#projects">پروژه‌ها</a>
+</div>
+<button onclick="document.body.classList.toggle('light')">تغییر پوسته</button>
+</nav>
+<style>
+        .logo{
+            color: rgb(0, 136, 255);
+        }
+    </style>
+<button class="icon-btn" onclick="toggleTheme()">☀️</button>
+<header>
+<search></search>
+<link href="g.ts" rel="stylesheet"/>
+<h1 class="ah">عکس سازنده این سایت </h1>
+<img src="WIN_20261110_09_46_47_Pro.jpg" width="445"/>
+<h3>نام سازنده:اهورا یگانه بیرانوند</h3>
+<button onclick="document.body.classList.toggle('light')">تغییر پوسته</button>
+<h1 class="app">اموزش برنامه نویسی</h1>
+<div class="search-results" id="searchResults"></div>
+<h1>میتوانید یک متن اچ تی ام ال ببینید</h1>
+<h3>برای دیدن سایت اصلی عدد 25 ارسال کنید</h3>
+<button onclick="downloadWord()">دانلود فایل word</button>
+<h3>ساعت دیجیتال</h3>
+<h2 class="ad" id="clock">۱۴:۲۱:۳۷</h2>
+<style>
+    .ad{
+        font-size: 55px;
+        color: #29213e;
+    }
+</style>
+<div class="card">
+<h3>ماشین حساب</h3>
+<input id="a" placeholder="عدد اول" type="number"/>
+<input id="b" placeholder="عدد دوم" type="number"/>
+<button onclick="calculate('+')">+</button>
+<button onclick="calculate('-')">-</button>
+<button onclick="calculate('*')">×</button>
+<button onclick="calculate('/')">÷</button>
+<button onclick="calculate('.')">&amp;</button>
+<p id="result"></p>
+</div>
+<pre><code><span class="pink">const</span> future = <span class="green">"Amazing!"</span>;
+
+<span class="pink">function</span> start() {
+  console.log(
+    "Hello Developer!"
+  );
+}
+
+start();</code></pre>
+<input id="search" placeholder=""/>
+<button onclick="sendMessage()">ارسال</button>
+<div id="result"></div>
+<a href="www.amozs web sayt.ir">سایت اصلی</a>
+<data value="server.js"></data>
+<search></search>
+<nav>
+<ul>
+<div class="course">
+<h3>آموزش HTML</h3>
+<p>آموزش طراحی صفحات وب</p>
+</div>
+<div class="course">
+<h3>آموزش CSS</h3>
+<p>آموزش زیباسازی سایت</p>
+</div>
+<div class="course">
+<h3>آموزش JavaScript</h3>
+<p>آموزش برنامه نویسی</p>
+</div>
+</ul>
+</nav>
+<main>
+<section>
+<h2 class="ah">تصویر</h2>
+<img downloadimage()"="" src="آموزش برنامه_نویسی وب با نور نئون.png" width="370"/>دانلود عکس
+
+
+
+<img alt="" sizes="" src="MohsenLorestani-Shoti-02.mp3" srcset=""/>
+<div class="music-player">
+<h3>یک ویس برای اموزش برنامهVisual Studio Code که از او برای طراحی سایت استفاده می کنیم</h3>
+<audio controls="">
+<source src="Recording (6).m4a" type="audio/mpeg"/>
+        مرورگر شما از پخش آهنگ پشتیبانی نمی‌کند.
+    </audio>
+</div>
+<button onclick="copyText()">
+        📋 کپی متن
+    </button>
+<textarea id="" name=""></textarea>
+<h3>ویدیو اول</h3>
+<video controls="" width="400">
+<source src="1.mp4" type="video/mp4"/>
+</video>
+<br/>
+<a download="" href="1.mp4">
+<button>دانلود ویدیو اول</button>
+</a>
+<hr/>
+<h3>ویدیو دوم - Your Very First Webpage</h3>
+<video controls="" width="400">
+<source src="002-Your Very First Webpage-Fateme Zarei Vashian.mp4" type="video/mp4"/>
+</video>
+<br/>
+<a download="" href="002-Your Very First Webpage-Fateme Zarei Vashian.mp4">
+<button>دانلود ویدیو دوم</button>
+</a>
+<hr/>
+<h3>ویدیو سوم - Text Elements</h3>
+<video controls="" width="400">
+<source src="003-Text Elements-Fateme Zarei Vashian.mp4" type="video/mp4"/>
+</video>
+<br/>
+<a download="" href="003-Text Elements-Fateme Zarei Vashian.mp4">
+<button>دانلود ویدیو سوم</button>
+</a>
+<search><nav>yes</nav></search>
+<audio src="image.png"></audio>
+<button onclick="downloadimage()">دانلود img </button>
+<section>دوره های اموزشی</section>
+<ul>
+<li>
+                                html
+                                </li>
+<li>
+                                 css
+                                </li>
+<li>
+                               javascrt
+                                </li>
+<li>
+                                Python
+                                </li>
+<li>
+                                 AI
+                                </li>
+</ul>
+<base href="ai.html"/>
+<details><keygen/></details>
+         
+h1{
+    <colgroup><p><kbd>ag</kbd></p></colgroup>
+<s><a href="www.catGPT.com">AI</a></s>
+}
+<div class="comments">
+<h2>نظرات شما</h2>
+<input id="name" placeholder="نام شما"/>
+<textarea id="comment" placeholder="نظر خود را بنویسید"></textarea>
+<button onclick="addComment()">ثبت نظر</button>
+<div id="commentsList"></div>
+</div>
+<h1 class="asw">همه چیز از اینجا شروع میشه!</h1>
+<h2>بهترین اموزش</h2>
+<fieldset>الان شروع میشه اخرشه</fieldset>
+<img src="doc.png" width="500"/>
+<img src="image (2).png" width="550"/>
+<img src="image (72).png" width="510"/>
+<img src="image (79).png" width="500"/>
+<img src="IMG_20261019_162618_788.jpg" width="499"/>
+<img src="IMG_20261019_162623_621.jpg" width="600"/>
+<h1 class="io">اگر ویندوز شما پایین 10 است بیاید ویندوز 10 را دانلود کنید برای این که ویندوز 10 و 11 برای برنامه نویس لازم است</h1>
+<div class="windows-download">
+<h2>دانلود ویندوز</h2>
+<a href="https://www.microsoft.com/software-download/windows10" target="_blank">
+       دانلود ویندوز 10
+    </a>
+<div class="ai-box">
+<h2>🤖 دستیار هوشمند برنامه‌نویسی</h2>
+<input id="aiInput" placeholder="چه چیزی می‌خواهی بسازی؟"/>
+<button onclick="sendAIMessage()">
+        ارسال
+    </button>
+<div id="aiResult"></div>
+</div>
+<br/><br/>
+<a href="https://www.microsoft.com/software-download/windows11" target="_blank">
+       دانلود ویندوز 11
+    </a>
+</div>
+<style>
+.ip{
+    color: #28971a;
+    font-size: 30px;
+}
+
+
+
+
+
+</style>
+<a class="lo" href="www.EducataonProgrammang.com">ادرس سایت دیگر</a>
+<style>
+.lo{
+    color: #e95cf6;
+}
+
+
+
+
+</style>
+<button class="clear" onclick="clearChat()"> کردن تاریخچه</button>
+<h4>بیشتر محتوا این وب سایت⬇⬇⬇⬇⬇⬇</h4>
+<h1>ما برای این سایت چه کار کردیم؟</h1>
+<h2>ما برای ساخت این سایت کلی کد به کار بردیم برای همین میخایم که مردم هم بتوانند پیشرفت کنند و اگر ما از دنیا رفتیم یکی جای ما هم باشه دنیا پایان ندارد</h2>
+<p class="ip">حالا سریع برنامه ویژول استودیو کد را روی کامپیوتر خود نصب کنید و یک پوشه در ان بسازید و در سمت راست صفحه  برنامه در روی اولین گزینه انتخاب کنید و بعد روی نیوو فولدر بزنید چند تا گزینه انجا است به رو ان که یک کاغذی که یک بعزافه روش است کلیک کنید و بعد روی ان نواری که میاید اول هر اسمی که دوست دارید بنویسید و بعدیک نقطه و بعد بنویسید اچ تی ام ال و بعد روی دکمه اینتر بزنید و بعد روی صفحه ای که باز می شود بزنید و بعد یک علامت تعجب بگزارید و بعد در وسط هد و بادی و اچ تی ام ال و بادی بزنید و بعد یک اچ وان بزارید و بعد اینتر بزنید  بعد در وسط ان ها یک چیز به فارسی بنویسی مثلا سلام و بعد دکمه های کنترل و اس رو بگیرید وبعد برید در ان پوشه ای که ساخته اید و بعد در روی ان چیزی که در پوشه امده کلیک کنید و بعد نوشته ی شما در انجاست</p>
+<div class="copy-box">
+<style>
+.io{
+    color: #000;
+}
+
+
+
+
+
+
+
+
+    </style>
+<button onclick="copyText()">
+        ادرس سایت ➡www.amozsProgrammang.com
+        📋 کپی متن
+    </button>
+<p id="message"></p>
+</div>
+<style>
+.copy-box {
+    background: #29213e;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+}
+
+.copy-box textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    resize: none;
+}
+
+.copy-box button {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+</style>
+<img sizes="1000" src="image (72).png" srcset="400" width="5555"/>
+<div class="search-results" id="searcغhResults"></div>
+<section class="my-code-library">
+<h1>کتابخانه کدهای اهورا</h1>
+<p>مجموعه کدهای کاربردی برنامه‌نویسی</p>
+<div class="my-code-card">
+<h3>۱. کد دانلود فایل Word</h3>
+<pre><code id="mycode1">function downloadWord() {
+    const link = document.createElement("a");
+    link.href = "./AI.docx";
+    link.download = "AI.docx";
+    link.click();
+}</code></pre>
+<button onclick="copyMyCode('mycode1',this)">کپی کد</button>
+</div>
+<div class="my-code-card">
+<h3>۲. کد دانلود تصویر</h3>
+<pre><code id="mycode2">function downloadImage() {
+    const link = document.createElement("a");
+    link.href = "image.png";
+    link.download = "image.png";
+    link.click();
+}</code></pre>
+<button onclick="copyMyCode('mycode2',this)">کپی کد</button>
+</div>
+<div class="my-code-card">
+<h3>۳. کد ارسال پیام</h3>
+<pre><code id="mycode3">function sendMessage() {
+    let text = document.getElementById("search").value;
+
+    if (text.trim() === "") return;
+
+    let result = document.getElementById("result");
+    let message = document.createElement("p");
+
+    message.textContent = text;
+    result.appendChild(message);
+
+    document.getElementById("search").value = "";
+}</code></pre>
+<button onclick="copyMyCode('mycode3',this)">کپی کد</button>
+</div>
+<div class="my-code-card">
+<h3>۴. کد ثبت نظرات کاربران</h3>
+<pre><code id="mycode4">function addComment() {
+    const name = document.getElementById("name").value.trim();
+    const comment = document.getElementById("comment").value.trim();
+
+    if (!name || !comment) {
+        alert("لطفاً نام و نظر خود را بنویسید");
+        return;
+    }
+
+    const item = document.createElement("div");
+    const title = document.createElement("strong");
+    const text = document.createElement("p");
+
+    title.textContent = name;
+    text.textContent = comment;
+
+    item.append(title, text);
+    document.getElementById("commentsList").prepend(item);
+
+    document.getElementById("name").value = "";
+    document.getElementById("comment").value = "";
+}</code></pre>
+<button onclick="copyMyCode('mycode4',this)">کپی کد</button>
+</div>
+<div class="my-code-card">
+<h3>۵. کد پخش موسیقی</h3>
+<pre><code id="mycode5">&lt;div class="music-player"&gt;
+    &lt;h3&gt;پخش موسیقی&lt;/h3&gt;
+    &lt;audio controls&gt;
+        &lt;source src="MohsenLorestani-Shoti-02.mp3"
+        type="audio/mpeg"&gt;
+    &lt;/audio&gt;
+&lt;/div&gt;</code></pre>
+<button onclick="copyMyCode('mycode5',this)">کپی کد</button>
+</div>
+<div class="my-code-card">
+<h3>۶. کد پخش ویدیو</h3>
+<pre><code id="mycode6">&lt;video width="400" controls&gt;
+    &lt;source src="1.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+&lt;a href="1.mp4" download&gt;
+    دانلود ویدیو
+&lt;/a&gt;</code></pre>
+<button onclick="copyMyCode('mycode6',this)">کپی کد</button>
+</div>
+<div class="my-code-card">
+<h3>۷. کد منوی سایت</h3>
+<pre><code id="mycode7">&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="ai.html"&gt;خانه&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="linj.html"&gt;دوره ها&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="ahora.html"&gt;هوش مصنوعی&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="hhh.html"&gt;تماس با ما&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+<button onclick="copyMyCode('mycode7',this)">کپی کد</button>
+</div>
+</section>
+</section></main></header><script>
+/* سازگاری ابزارهای قدیمی صفحه */
+function runCode(){
+  const editor=document.getElementById('editor');
+  const frame=document.getElementById('legacy-preview');
+  if(editor && frame) frame.srcdoc=editor.value;
+}
+function downloadWord(){
+  const link=document.createElement('a'); link.href='./AI.docx'; link.download='AI.docx';
+  link.click();
+}
+function downloadImage(){
+  const link=document.createElement('a'); link.href='image.png'; link.download='image.png'; link.click();
+}
+function downloadimage(){ downloadImage(); }
+async function copyText(){
+  const field=document.getElementById('myText') || document.querySelector('.copy-box textarea');
+  const message=document.getElementById('message');
+  if(!field){ if(message) message.textContent='متنی برای کپی پیدا نشد.'; return; }
+  try { await navigator.clipboard.writeText(field.value); if(message) message.textContent='متن کپی شد!'; }
+  catch(e){ field.focus(); field.select(); const ok=document.execCommand('copy'); if(message) message.textContent=ok?'متن کپی شد!':'کپی خودکار در این مرورگر در دسترس نیست.'; }
+}
+async function copyMyCode(id,button){
+  const node=document.getElementById(id); if(!node) return;
+  try { await navigator.clipboard.writeText(node.innerText); if(button) button.textContent='کپی شد ✓'; }
+  catch(e){ const range=document.createRange(); range.selectNodeContents(node); const selection=getSelection(); selection.removeAllRanges(); selection.addRange(range); if(button) button.textContent='کد انتخاب شد؛ کپی کن'; }
+}
+function copyMyMobil(){
+  const value='09164972735';
+  if(navigator.clipboard?.writeText) navigator.clipboard.writeText(value).catch(()=>{});
+}
+function sendMessage(){
+  const input=document.getElementById('search'); const result=document.getElementById('result');
+  if(!input || !result) return;
+  const value=input.value.trim(); if(!value) return;
+  const p=document.createElement('p'); p.textContent=value; result.appendChild(p); input.value='';
+}
+function calculate(op){
+  const a=Number(document.getElementById('a')?.value); const b=Number(document.getElementById('b')?.value);
+  const out=document.getElementById('result');
+  let value;
+  if(!Number.isFinite(a)||!Number.isFinite(b)) value='دو عدد وارد کن';
+  else if(op==='+') value=a+b; else if(op==='-') value=a-b; else if(op==='*') value=a*b; else if(op==='/') value=b===0?'تقسیم بر صفر ممکن نیست':a/b; else value=a+b;
+  const target=document.getElementById('result');
+  const calcResult=document.querySelector('.card #result');
+  if(calcResult) calcResult.textContent='نتیجه: '+value;
+  else if(out) out.textContent='نتیجه: '+value;
+}
+function addComment(){
+  const name=document.getElementById('name')?.value.trim(); const comment=document.getElementById('comment')?.value.trim();
+  const list=document.getElementById('commentsList');
+  if(!name || !comment || !list){ alert('نام و نظر را وارد کن.'); return; }
+  const item=document.createElement('div'); const title=document.createElement('strong'); const text=document.createElement('p');
+  title.textContent=name; text.textContent=comment; item.append(title,text); list.prepend(item);
+  document.getElementById('name').value=''; document.getElementById('comment').value='';
+}
+function clearChat(){
+  const list=document.getElementById('commentsList'); if(list) list.replaceChildren();
+  const result=document.getElementById('result'); if(result) result.replaceChildren();
+}
+function startListening(){ alert('قابلیت تشخیص صدا در این نسخه فعال نشده است.'); }
+</script><div aria-live="polite" class="toast" id="toast" role="status"></div></body>
+<button class="mic" onclick="startListening()">🎤</button>
+<h5>ایمیل:ahorayeganh@gmail.com</h5>
+<a class="call-btn" href="mailto:hadiszareii994@gmail.com?subject=پیام%20از%20سایت">
+با زدن به این دکمه میتوانید به ایمیل بالا پیام بفرستید
+
+</a>
+<h4>شماره تلفن:09164972735</h4>
+<a class="call-btn" href="tel:09164972735">
+    تماس با ما
+</a>
+  &lt;09164972735&gt;
+   <button onclick="copyMyMobil('mycode7',this)">کپی کد</button>
+<style>
+    .zx{
+        color: #000;
+    }
+   </style>
+<style>
+    a{
+        color: #73ff00;
+        font-size: 32px;
+        align-self: auto;
+        overflow-x: var(AHORA);
+    }
+   </style>
+<style>
+    H4{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 0, 0);
+
+
+    }
+    H5{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background-color: rgb(255, 0, 0);
+
+    }
+   </style>
+<audio>
+</audio>
+<img alt="لپ‌تاپ اپل مدل MacBook Pro MGED4 2026 LLA، پردازنده M5 Max، رم 36GB، حافظه 2TB SSD، نمایشگر 16.2 اینچی Liquid Retina XDR Mini-LED با نرخ نوسازی 120 هرتز، سیستم‌عامل macOS" class="w-full inline-block" height="164" src="https://dkstatics-public.digikala.com/digikala-products/52911bcdb01c4122759b430697732b2bf538c784_1777798058.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90" srcset="https://dkstatics-public.digikala.com/digikala-products/52911bcdb01c4122759b430697732b2bf538c784_1777798058.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_80/format,webp" style="object-fit: cover;" title="" width="164"/>
+<h3>لپ‌تاپ اپل مدل MacBook Pro MGED4 2026 LLA، پردازنده M5 Max، رم 36GB، حافظه 2TB SSD، نمایشگر 16.2 اینچی Liquid Retina XDR Mini-LED با نرخ نوسازی 120 هرتز، سیستم‌عامل macOS
+<div class="py-4"><div class="ml-4 mr-3"><li class="flex items-center lg:ml-3 text-delivery-express"><dds-icon color="content/1" name="shipping-express" style="font-size: 18px;"></dds-icon><p class="text-body-2 text-neutral-500 mr-2">تحویل عادی دیجی‌کالا از ۱ روز کاری دیگر</p></li></div></div>
+<img src="کلاژ تبلیغاتی لپ_تاپ ایسر اسپایر ۵۷۵۰.png" width="600"/>
+<h2>💻 دنیای لپ‌تاپ و تکنولوژی
+
+اینجا با جدیدترین مدل‌ها و برندهای لپ‌تاپ آشنا شوید. از لپ‌تاپ‌های اقتصادی و دانشجویی تا سیستم‌های قدرتمند برای برنامه‌نویسی، طراحی و کارهای حرفه‌ای.
+
+✨ مشخصات فنی، تصاویر و معرفی محصولات را مشاهده کنید و انتخاب هوشمندانه‌تری داشته باشید.</h2>
+<h1>رم:۶۴ ویندوز:۱۱ هارد:۵ترابایت پردازنده:i10</h1>
+<style>
+    .call-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px #8b5cf655;
+    transition: 0.3s;
+}
+
+.call-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px #8b5cf688;
+}
+</style>
+<button aria-label="تغییر تم" class="iconbtn" id="themeBtn">🌙</button>
+<button class="btn small" id="profileBtn">اهورا</button>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+:root{
+ --bg:#0b0912;--surface:#15111f;--surface2:#1e1830;--surface3:#29213b;
+ --text:#f7f3ff;--muted:#aaa0bb;--line:#342849;--purple:#9865ff;
+ --purple2:#c2a5ff;--green:#39d6a2;--red:#ff7185;--yellow:#ffd166;
+ --shadow:0 18px 55px #0005;--radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.7}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--purple2);outline-offset:3px}
+.container{width:min(1200px,92%);margin:auto}
+.topbar{position:sticky;top:0;z-index:50;background:#100c1eeF;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-size:24px;font-weight:900;letter-spacing:.5px;white-space:nowrap}
+.brand span{color:var(--purple2)}
+.navlinks{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.navlinks a{font-size:13px;color:var(--muted);transition:.2s}
+.navlinks a:hover,.navlinks a.active{color:var(--purple2)}
+.navtools{display:flex;gap:8px;align-items:center}
+.btn,.iconbtn,.filter,.tabbtn{border:1px solid transparent;border-radius:11px;padding:10px 15px;transition:.2s}
+.btn{background:linear-gradient(135deg,#a56cff,#713ce0);color:white;font-weight:700;box-shadow:0 7px 22px #8750df22}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px #8750df44}
+.btn.secondary{background:var(--surface2);border-color:var(--line);box-shadow:none;color:var(--text)}
+.btn.small{padding:8px 12px;font-size:13px}
+.iconbtn{background:var(--surface2);border-color:var(--line);color:var(--text);padding:9px 12px}
+.hero{padding:82px 0 65px;background:radial-gradient(ellipse at 80% 15%,#552c8955,transparent 48%),radial-gradient(ellipse at 8% 75%,#33205b44,transparent 45%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--purple2);background:#9865ff16;border:1px solid #9865ff55;padding:7px 13px;border-radius:30px;font-size:12px;font-weight:700}
+.hero h1{font-size:clamp(35px,5.3vw,64px);line-height:1.45;margin:22px 0;font-weight:900}
+.gradient{background:linear-gradient(90deg,#d4bdff,#9a68ff,#efc5ff);background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:610px;line-height:2.2;margin:0 0 25px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.code-showcase{background:linear-gradient(145deg,#241a38,#100c1b);border:1px solid #65459a;border-radius:23px;padding:22px;box-shadow:0 28px 85px #7e45cf2a;transform:rotate(-1deg)}
+.code-head{direction:ltr;display:flex;justify-content:space-between;color:#bca7db;font-size:12px;margin-bottom:16px}
+.dots{letter-spacing:4px;color:#c59dff}
+.code-showcase pre{direction:ltr;text-align:left;white-space:pre-wrap;overflow:auto;color:#d4c1ff;line-height:2;font:14px/2 Consolas,monospace}
+.code-showcase .kw{color:#f4a6ff}.code-showcase .str{color:#8ce4bc}.code-showcase .fn{color:#ffd68a}
+.mini-status{display:flex;justify-content:space-between;gap:10px;background:#ffffff0c;border:1px solid #ffffff12;padding:13px 15px;border-radius:12px;color:#d8c9ef;font-size:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-12px;position:relative}
+.stat,.panel,.course,.feature,.faq,.challenge{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.stat{text-align:center;padding:20px}
+.stat strong{display:block;color:var(--purple2);font-size:27px}
+.stat span{color:var(--muted);font-size:12px}
+.section{padding:76px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap;margin-bottom:26px}
+.section-title{font-size:29px;margin:10px 0 4px}
+.sub{color:var(--muted);font-size:14px;line-height:2}
+.search{width:min(330px,100%);padding:13px 15px;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:12px;outline:none}
+.search:focus{border-color:var(--purple)}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0 25px}
+.filter{background:var(--surface2);border-color:var(--line);color:var(--muted);font-size:13px}
+.filter.active{background:var(--purple);color:white;border-color:var(--purple)}
+.course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.course{padding:22px;transition:.25s;position:relative;overflow:hidden}
+.course:hover{transform:translateY(-5px);border-color:#8656d7;box-shadow:var(--shadow)}
+.course-top{display:flex;justify-content:space-between;align-items:center}
+.course-icon{width:53px;height:53px;display:grid;place-items:center;border-radius:15px;background:#9865ff1c;font-size:27px}
+.level{font-size:11px;color:var(--purple2);background:#9865ff17;padding:5px 9px;border-radius:30px}
+.course h3{margin:15px 0 6px;font-size:18px}
+.course p{color:var(--muted);font-size:13px;min-height:52px;line-height:1.9}
+.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin:14px 0 8px}
+.progress{height:7px;background:var(--surface3);border-radius:20px;overflow:hidden}
+.progress>span{display:block;height:100%;background:linear-gradient(90deg,#7040d8,#c4a5ff);width:0;transition:.3s}
+.course-actions{display:flex;gap:8px;margin-top:17px}
+.course-actions .btn{flex:1}
+.course-actions .iconbtn{min-width:42px}
+.empty{grid-column:1/-1;text-align:center;padding:35px;color:var(--muted)}
+.dashboard{padding:28px;background:linear-gradient(120deg,#211632,#171126);border:1px solid var(--line);border-radius:22px}
+.dash-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:23px}
+.dash-item{padding:18px;background:#ffffff09;border:1px solid #ffffff0d;border-radius:13px}
+.dash-item strong{display:block;color:var(--purple2);font-size:25px}
+.dash-item span{color:var(--muted);font-size:12px}
+.dash-wide{margin-top:17px;padding:18px;background:#ffffff08;border-radius:13px}
+.dash-wide .progress{margin-top:12px;height:10px}
+.workspace{background:var(--surface);border:1px solid var(--line);padding:22px;border-radius:20px}
+.editor-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:13px}
+.tabs{display:flex;gap:7px}
+.tabbtn{background:var(--surface2);color:var(--muted);border-color:var(--line);font-size:12px}
+.tabbtn.active{background:#6339a6;color:white}
+.editorarea{display:none;width:100%;height:245px;resize:vertical;background:#090711;color:#d8c5ff;border:1px solid #3b2a52;border-radius:12px;padding:17px;direction:ltr;text-align:left;font:14px/1.7 Consolas,monospace;outline:none}
+.editorarea.active{display:block}
+.preview-head{display:flex;justify-content:space-between;align-items:center;margin:19px 0 9px}
+#preview{width:100%;height:270px;background:white;border:0;border-radius:12px}
+.challenge-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.challenge{padding:23px}
+.challenge h3{margin:10px 0}
+.challenge p{color:var(--muted);font-size:13px;line-height:2}
+.challenge code{direction:ltr;display:block;text-align:left;background:#090711;color:#d4baff;padding:13px;border-radius:10px;margin:13px 0;overflow:auto}
+.quizbox{padding:25px}
+.quiz-count{font-size:12px;color:var(--purple2)}
+.question{font-size:19px;margin:16px 0}
+.options{display:grid;gap:10px}
+.option{border:1px solid var(--line);background:var(--surface2);color:var(--text);padding:13px 15px;border-radius:11px;text-align:right}
+.option:hover:not(:disabled){border-color:var(--purple)}
+.option.correct{border-color:var(--green);background:#39d6a21b}
+.option.wrong{border-color:var(--red);background:#ff71851b}
+.quiz-result{color:var(--purple2);margin:14px 0;min-height:25px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.feature{padding:23px}
+.feature .emoji{font-size:30px}
+.feature h3{margin:12px 0 5px}
+.feature p{color:var(--muted);font-size:13px;line-height:2}
+.faq{padding:0 20px}
+.faq-item+.faq-item{border-top:1px solid var(--line)}
+.faq-q{width:100%;background:none;border:0;color:var(--text);text-align:right;padding:18px 0;font-weight:700}
+.faq-a{display:none;color:var(--muted);font-size:13px;padding:0 0 18px;line-height:2}
+.faq-item.open .faq-a{display:block}
+.footer{border-top:1px solid var(--line);padding:38px 0;background:#100c1b;text-align:center}
+.footer p{color:var(--muted);font-size:13px;margin-top:9px}
+.modal{display:none;position:fixed;inset:0;background:#000c;z-index:100;align-items:center;justify-content:center;padding:18px}
+.modal.open{display:flex}
+.modal-card{width:min(650px,100%);max-height:88vh;overflow:auto;background:var(--surface);border:1px solid var(--purple);border-radius:20px;padding:25px;box-shadow:var(--shadow)}
+.modal-head{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.modal-head h2{font-size:21px}
+.close{background:var(--surface2);border:1px solid var(--line);color:var(--text);border-radius:9px;padding:8px 12px}
+.lesson-list{display:grid;gap:9px;margin:20px 0}
+.lesson-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px;background:var(--surface2);border:1px solid var(--line);border-radius:11px}
+.lesson-row small{color:var(--muted)}
+.lesson-row button{white-space:nowrap}
+.lesson-content{display:none;padding:17px;margin-top:12px;background:#0d0a16;border:1px solid var(--line);border-radius:12px;line-height:2}
+.lesson-content.show{display:block}
+.lesson-content pre{direction:ltr;text-align:left;overflow:auto;background:#05040a;color:#d4baff;padding:13px;border-radius:9px}
+.formrow{display:grid;gap:7px;margin:13px 0}
+.formrow label{font-size:13px;color:var(--muted)}
+.formrow input{padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--surface2);color:var(--text)}
+.toast{position:fixed;bottom:22px;right:22px;z-index:200;background:#251a38;border:1px solid var(--purple);border-radius:12px;padding:13px 18px;box-shadow:var(--shadow);opacity:0;transform:translateY(12px);transition:.25s;pointer-events:none}
+.toast.show{opacity:1;transform:translateY(0)}
+.light{--bg:#f5f1fc;--surface:#fff;--surface2:#f0eafb;--surface3:#e4d9f4;--text:#251938;--muted:#6d607e;--line:#dfd2ef;--shadow:0 15px 45px #60418b1c}
+.light .topbar{background:#ffffffed}
+.light .footer{background:#eee7f8}
+.light .dashboard{color:#fff}
+.light .dashboard .sub{color:#d2c4e7}
+.light .code-showcase{color:white}
+@media(max-width:900px){
+ .hero-grid{grid-template-columns:1fr}
+ .course-grid{grid-template-columns:repeat(2,1fr)}
+ .features{grid-template-columns:repeat(2,1fr)}
+ .navlinks{gap:11px}
+}
+@media(max-width:650px){
+ .nav{padding:12px 0;flex-wrap:wrap;justify-content:center}
+ .navlinks{order:3;width:100%;justify-content:center}
+ .navlinks a{font-size:11px}
+ .hero{padding:55px 0}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .course-grid,.features,.challenge-grid{grid-template-columns:1fr}
+ .dash-grid{grid-template-columns:repeat(2,1fr)}
+ .section{padding:55px 0}
+ .section-head{align-items:stretch}
+ .search{width:100%}
+}
+</style>
+<div class="course-top"><div class="course-icon">🌐</div><span class="level">مبتدی</span></div>
+<h3>HTML از پایه</h3>
+<p>ساختار صفحه، متن، لینک، تصویر، فهرست و فرم.</p>
+<div class="meta"><span>5 درس نمونه</span><span>0/5 تکمیل</span></div>
+<div class="progress"><span style="width:0%"></span></div>
+<div class="course-actions"><button class="btn small" data-open="html">ادامه مسیر</button><button aria-label="نشان کردن دوره" class="iconbtn" data-bookmark="html">☆</button></div>
+<article class="course"><div class="course-top"><div class="course-icon">🌐</div><span class="level">مبتدی</span></div>
+<h3>HTML از پایه</h3><p>ساختار صفحه، متن، لینک، تصویر، فهرست و فرم.</p>
+<div class="meta"><span>5 درس نمونه</span><span>0/5 تکمیل</span></div>
+<div class="progress"><span style="width:0%"></span></div>
+<div class="course-actions"><button class="btn small" data-open="html">ادامه مسیر</button><button aria-label="نشان کردن دوره" class="iconbtn" data-bookmark="html">☆</button></div></article>
+<section class="section" id="dashboard">
+<div class="container">
+<div class="dashboard">
+<span class="eyebrow">YOUR LEARNING SPACE</span>
+<h2 class="section-title">داشبورد پیشرفت</h2>
+<p class="sub">پیشرفت این مرورگر به‌صورت محلی ذخیره می‌شود.</p>
+<div class="dash-grid">
+<div class="dash-item"><strong id="dashDone">0</strong><span>درس تکمیل‌شده</span></div>
+<div class="dash-item"><strong id="dashTotal">37</strong><span>کل درس‌های نمونه</span></div>
+<div class="dash-item"><strong id="dashCourses">0</strong><span>دوره شروع‌شده</span></div>
+<div class="dash-item"><strong id="dashPercent">0%</strong><span>پیشرفت کلی</span></div>
+</div>
+<div class="dash-wide"><div style="display:flex;justify-content:space-between;gap:10px"><strong>مسیر کلی یادگیری</strong><span id="dashLabel">0%</span></div><div class="progress"><span id="dashBar" style="width: 0%;"></span></div></div>
+</div>
+</div>
+</section>
+<div aria-labelledby="modalTitle" aria-modal="true" class="modal" id="courseModal" role="dialog">
+<div class="modal-card">
+<div class="modal-head"><h2 id="modalTitle">🌐 HTML از پایه</h2><button aria-label="بستن" class="close" id="closeModal">✕</button></div>
+<p class="sub" id="modalDescription">ساختار صفحه، متن، لینک، تصویر، فهرست و فرم.</p>
+<div class="progress" style="margin:18px 0"><span id="modalBar" style="width: 0%;"></span></div>
+<div class="sub" id="modalProgressText">0 از 5 درس تکمیل شده — 0٪</div>
+<div class="lesson-list" id="lessonList"><div class="lesson-row"><div><strong>1. آشنایی با HTML</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="0">شروع درس</button></div><div class="lesson-row"><div><strong>2. عنوان و پاراگراف</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="1">شروع درس</button></div><div class="lesson-row"><div><strong>3. لینک و تصویر</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="2">شروع درس</button></div><div class="lesson-row"><div><strong>4. فهرست‌ها</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="3">شروع درس</button></div><div class="lesson-row"><div><strong>5. فرم ساده</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="4">شروع درس</button></div></div>
+<div class="lesson-content" id="lessonContent"></div>
+</div>
+</div>
+<div aria-labelledby="profileTitle" aria-modal="true" class="modal" id="profileModal" role="dialog">
+<div class="modal-card">
+<div class="modal-head"><h2 id="profileTitle">پروفایل محلی</h2><button class="close" id="closeProfile">✕</button></div>
+<p class="sub">این پروفایل فقط روی همین مرورگر ذخیره می‌شود و حساب آنلاین نیست.</p>
+<div class="formrow"><label for="profileName">نام نمایشی</label><input id="profileName" maxlength="30" placeholder="نام خود را وارد کن"/></div>
+<button class="btn" id="saveProfile">ذخیره نام</button>
+</div>
+</div>
+<div class="panel quizbox" style="margin-top:22px">
+<div class="quiz-count" id="quizCount">سؤال 2 از 5</div>
+<h3 class="question" id="quizQuestion">کدام فناوری برای ظاهر و چیدمان صفحه است؟</h3>
+<div class="options" id="quizOptions"><button class="option">SQL</button><button class="option">CSS</button><button class="option">PHP</button><button class="option">Git</button></div>
+<div aria-live="polite" class="quiz-result" id="quizResult"></div>
+<button class="btn" id="quizNext" style="display: none;">سؤال بعدی</button>
+</div>
+<h3 class="question" id="quizQuestion">HTML چه نقشی در صفحه وب دارد؟</h3>
+<script>document.addEventListener("DOMContentLoaded", function () {
+
+"use strict";
+
+/* داده‌های دوره و درس‌های نمونه */
+const courses = [
+ {id:"html",title:"HTML از پایه",icon:"🌐",cat:"web",level:"مبتدی",desc:"ساختار صفحه، متن، لینک، تصویر، فهرست و فرم.",lessons:[
+  ["آشنایی با HTML","HTML زبان نشانه‌گذاری برای توصیف ساختار صفحه وب است.","<h1>سلام دنیا</h1>\n<p>اولین صفحه من</p>"],
+  ["عنوان و پاراگراف","برای عنوان از h1 تا h6 و برای پاراگراف از p استفاده می‌شود.","<h1>عنوان اصلی</h1>\n<h2>عنوان فرعی</h2>\n<p>یک پاراگراف نمونه</p>"],
+  ["لینک و تصویر","تگ a برای پیوند و img برای نمایش تصویر به‌کار می‌رود.","<a href=\"https://example.com\">باز کردن لینک</a>\n<img src=\"photo.jpg\" alt=\"توضیح عکس\">"],
+  ["فهرست‌ها","برای فهرست نشانه‌دار از ul و برای فهرست شماره‌دار از ol استفاده کن.","<ul><li>HTML</li><li>CSS</li></ul>"],
+  ["فرم ساده","فرم‌ها برای دریافت اطلاعات از کاربر استفاده می‌شوند.","<form>\n<input placeholder=\"نام\">\n<button>ارسال</button>\n</form>"]
+ ]},
+ {id:"css",title:"CSS و طراحی",icon:"🎨",cat:"web",level:"مبتدی",desc:"رنگ، فونت، فاصله، Flexbox، Grid و واکنش‌گرایی.",lessons:[
+  ["CSS چیست؟","CSS ظاهر و چیدمان عناصر HTML را کنترل می‌کند.","h1 { color: purple; }\nbody { background: #f5f0ff; }"],
+  ["انتخابگرها","با انتخابگرها عناصر موردنظر را برای استایل انتخاب می‌کنی.",".card { padding: 20px; }\n#title { color: purple; }"],
+  ["مدل جعبه‌ای","هر عنصر از محتوا، padding، border و margin تشکیل می‌شود.",".box { padding: 15px; border: 1px solid; margin: 10px; }"],
+  ["Flexbox","برای چیدمان یک‌بعدی از Flexbox استفاده کن.",".row { display:flex; gap:16px; align-items:center; }"],
+  ["واکنش‌گرایی","با media query ظاهر را برای اندازه‌های مختلف تنظیم کن.","@media (max-width:600px) { .grid { grid-template-columns:1fr; } }"]
+ ]},
+ {id:"js",title:"JavaScript",icon:"⚡",cat:"programming",level:"متوسط",desc:"متغیر، شرط، حلقه، تابع، رویداد و DOM.",lessons:[
+  ["شروع JavaScript","جاوااسکریپت رفتار تعاملی به صفحه اضافه می‌کند.","const name = \"Sara\";\nconsole.log(name);"],
+  ["متغیرها","از let برای مقدار قابل تغییر و const برای مقدار ثابت استفاده کن.","let score = 10;\nconst site = \"CODEVERSE\";"],
+  ["شرط‌ها","با if و else بر اساس شرط تصمیم بگیر.","if (score >= 10) {\n console.log(\"قبول\");\n} else {\n console.log(\"تمرین بیشتر\");\n}"],
+  ["تابع","تابع یک قطعه کد قابل استفاده مجدد است.","function greet(name) {\n return \"سلام \" + name;\n}\nconsole.log(greet(\"دوست من\"));"],
+  ["رویداد کلیک","با addEventListener به رویدادهای صفحه واکنش نشان بده.","button.addEventListener(\"click\", () => {\n alert(\"سلام!\");\n});"]
+ ]},
+ {id:"python",title:"Python",icon:"🐍",cat:"programming",level:"مبتدی",desc:"مبانی پایتون، شرط، حلقه، تابع و ساختار داده.",lessons:[
+  ["شروع پایتون","پایتون زبانی عمومی و خوانا برای کاربردهای گوناگون است.","print(\"Hello World\")"],
+  ["متغیرها","متغیر نامی برای نگهداری مقدار است.","name = \"Sara\"\nage = 15"],
+  ["شرط","با if و else مسیر اجرای برنامه را انتخاب کن.","if age >= 18:\n print(\"بزرگسال\")\nelse:\n print(\"نوجوان\")"],
+  ["حلقه","حلقه برای تکرار دستورها استفاده می‌شود.","for number in range(5):\n print(number)"]
+ ]},
+ {id:"php",title:"PHP",icon:"🐘",cat:"programming",level:"متوسط",desc:"مبانی PHP، متغیرها، شرط‌ها، فرم و سرور.",lessons:[
+  ["شروع PHP","PHP زبان سمت سرور است و کد آن روی سرور اجرا می‌شود.","<?php\necho \"Hello World\";\n?>"],
+  ["متغیرها","نام متغیر در PHP با علامت دلار شروع می‌شود.","<?php\n$name = \"Sara\";\necho $name;\n?>"],
+  ["شرط‌ها","ساختار if برای تصمیم‌گیری استفاده می‌شود.","<?php\nif ($score >= 10) {\n echo \"قبول\";\n}\n?>"]
+ ]},
+ {id:"mysql",title:"MySQL و SQL",icon:"🗄️",cat:"database",level:"متوسط",desc:"جدول، رکورد، جست‌وجو و مدیریت پایگاه داده.",lessons:[
+  ["پایگاه داده چیست؟","پایگاه داده اطلاعات را به‌شکل سازمان‌یافته نگهداری می‌کند.","CREATE DATABASE academy;"],
+  ["ساخت جدول","جدول از ستون‌ها و ردیف‌ها تشکیل می‌شود.","CREATE TABLE students (\n id INT PRIMARY KEY,\n name VARCHAR(100)\n);"],
+  ["خواندن اطلاعات","SELECT برای خواندن داده‌ها استفاده می‌شود.","SELECT * FROM students;"]
+ ]},
+ {id:"node",title:"Node.js",icon:"🟢",cat:"programming",level:"پیشرفته",desc:"اجرای JavaScript خارج از مرورگر و ساخت سرور.",lessons:[
+  ["Node.js چیست؟","Node.js محیط اجرای JavaScript در خارج از مرورگر است.","console.log(\"Node is running\");"],
+  ["ماژول‌ها","ماژول‌ها کد را به بخش‌های قابل استفاده مجدد تقسیم می‌کنند.","import path from \"node:path\";"]
+ ]},
+ {id:"git",title:"Git و GitHub",icon:"📂",cat:"tools",level:"متوسط",desc:"کنترل نسخه، ثبت تغییرات و همکاری روی پروژه.",lessons:[
+  ["Git چیست؟","Git تاریخچه تغییرات پروژه را مدیریت می‌کند.","git init"],
+  ["ثبت تغییرات","ابتدا فایل‌ها را stage و سپس commit کن.","git add .\ngit commit -m \"first commit\""]
+ ]},
+ {id:"react",title:"React",icon:"⚛️",cat:"web",level:"پیشرفته",desc:"ساخت رابط کاربری با کامپوننت‌ها و state.",lessons:[
+  ["React چیست؟","React کتابخانه‌ای برای ساخت رابط کاربری است.","function App(){ return <h1>Hello</h1>; }"],
+  ["کامپوننت","کامپوننت بخشی مستقل از رابط کاربری است.","function Welcome(){ return <p>Welcome</p>; }"]
+ ]},
+ {id:"bootstrap",title:"Bootstrap",icon:"🅱️",cat:"web",level:"مبتدی",desc:"ساخت سریع رابط‌های واکنش‌گرا با کلاس‌های آماده.",lessons:[
+  ["Bootstrap چیست؟","Bootstrap مجموعه‌ای از ابزارهای رابط کاربری است.","<button class=\"btn btn-primary\">Click</button>"],
+  ["سیستم Grid","سیستم Grid برای ساخت ستون‌بندی استفاده می‌شود.","<div class=\"row\"><div class=\"col\">ستون</div></div>"]
+ ]},
+ {id:"vscode",title:"محیط VS Code",icon:"💻",cat:"tools",level:"مبتدی",desc:"مدیریت فایل‌ها، افزونه‌ها، ترمینال و میانبرها.",lessons:[
+  ["آشنایی با محیط","Explorer فایل‌ها و پوشه‌های پروژه را نمایش می‌دهد.","Ctrl + Shift + E"],
+  ["ذخیره فایل","برای ذخیره فایل از میانبر استفاده کن.","Ctrl + S"]
+ ]},
+ {id:"security",title:"مبانی امنیت وب",icon:"🛡️",cat:"tools",level:"مقدماتی",desc:"آشنایی مفهومی با HTTPS، اعتبارسنجی و حفاظت داده.",lessons:[
+  ["HTTPS","HTTPS ارتباط مرورگر و سرور را رمزنگاری می‌کند.","https://example.com"],
+  ["اعتبارسنجی ورودی","ورودی کاربر را در سمت سرور بررسی و پاک‌سازی کن.","Validate input on the server."]
+ ]}
+];
+
+const $ = selector => document.querySelector(selector);
+const $$ = selector => [...document.querySelectorAll(selector)];
+const readJSON = (key,fallback) => {
+ try { const value=JSON.parse(localStorage.getItem(key)); return value ?? fallback; }
+ catch { return fallback; }
+};
+const completed = () => readJSON("cv_lessons_v2",[]);
+const saveCompleted = value => localStorage.setItem("cv_lessons_v2",JSON.stringify(value));
+
+const toast = message => {
+ const node=$("#toast"); node.textContent=message; node.classList.add("show");
+ clearTimeout(toast.timer); toast.timer=setTimeout(()=>node.classList.remove("show"),2400);
+};
+
+/* فهرست دوره‌ها، جست‌وجو و فیلتر */
+let activeFilter="all";
+function courseProgress(course){
+ const done=completed().filter(x=>x.startsWith(course.id+":")).length;
+ return {done,total:course.lessons.length,pct:Math.round(done/course.lessons.length*100)};
+}
+function renderCourses(){
+ const query=$("#searchInput").value.trim().toLocaleLowerCase("fa");
+ const list=courses.filter(course=>{
+  const text=(course.title+" "+course.desc).toLocaleLowerCase("fa");
+  return (activeFilter==="all"||course.cat===activeFilter)&&text.includes(query);
+ });
+ $("#courseGrid").innerHTML="";
+ if(!list.length){$("#courseGrid").innerHTML='<div class="empty">دوره‌ای پیدا نشد. عبارت دیگری را امتحان کن.</div>';return;}
+ list.forEach(course=>{
+  const p=courseProgress(course);
+  const card=document.createElement("article");card.className="course";
+  card.innerHTML=`<div class="course-top"><div class="course-icon">${course.icon}</div><span class="level">${course.level}</span></div>
+   <h3>${course.title}</h3><p>${course.desc}</p>
+   <div class="meta"><span>${course.lessons.length} درس نمونه</span><span>${p.done}/${p.total} تکمیل</span></div>
+   <div class="progress"><span style="width:${p.pct}%"></span></div>
+   <div class="course-actions"><button class="btn small" data-open="${course.id}">ادامه مسیر</button><button class="iconbtn" data-bookmark="${course.id}" aria-label="نشان کردن دوره">${readJSON("cv_bookmarks",[]).includes(course.id)?"★":"☆"}</button></div>`;
+  $("#courseGrid").appendChild(card);
+ });
+ $$("[data-open]").forEach(button=>button.addEventListener("click",()=>openCourse(button.dataset.open)));
+ $$("[data-bookmark]").forEach(button=>button.addEventListener("click",()=>{
+  const saved=readJSON("cv_bookmarks",[]);const id=button.dataset.bookmark;
+  const next=saved.includes(id)?saved.filter(x=>x!==id):[...saved,id];
+  localStorage.setItem("cv_bookmarks",JSON.stringify(next));renderCourses();
+  toast(next.includes(id)?"دوره به علاقه‌مندی‌ها اضافه شد.":"از علاقه‌مندی‌ها حذف شد.");
+ }));
+}
+$("#searchInput").addEventListener("input",renderCourses);
+$$("[data-filter]").forEach(button=>button.addEventListener("click",()=>{
+ $$("[data-filter]").forEach(x=>x.classList.remove("active"));button.classList.add("active");
+ activeFilter=button.dataset.filter;renderCourses();
+}));
+
+/* درس‌ها و ذخیره پیشرفت */
+let selectedCourse=null;
+function openCourse(id){
+ selectedCourse=courses.find(x=>x.id===id);if(!selectedCourse)return;
+ $("#modalTitle").textContent=selectedCourse.icon+" "+selectedCourse.title;
+ $("#modalDescription").textContent=selectedCourse.desc;
+ renderLessonList();$("#lessonContent").classList.remove("show");$("#courseModal").classList.add("open");
+}
+function renderLessonList(){
+ const p=courseProgress(selectedCourse);
+ $("#modalBar").style.width=p.pct+"%";
+ $("#modalProgressText").textContent=`${p.done} از ${p.total} درس تکمیل شده — ${p.pct}٪`;
+ $("#lessonList").innerHTML="";
+ selectedCourse.lessons.forEach((lesson,index)=>{
+  const key=selectedCourse.id+":"+index;const isDone=completed().includes(key);
+  const row=document.createElement("div");row.className="lesson-row";
+  row.innerHTML=`<div><strong>${index+1}. ${lesson[0]}</strong><br><small>${isDone?"تکمیل شده ✓":"درس آموزشی"}</small></div><button class="btn small" data-lesson="${index}">${isDone?"مرور درس":"شروع درس"}</button>`;
+  $("#lessonList").appendChild(row);
+ });
+ $$("[data-lesson]").forEach(button=>button.addEventListener("click",()=>showLesson(Number(button.dataset.lesson))));
+}
+function showLesson(index){
+ const lesson=selectedCourse.lessons[index];const key=selectedCourse.id+":"+index;
+ const done=completed().includes(key);
+ const content=$("#lessonContent");content.classList.add("show");
+ content.innerHTML=`<h3>${lesson[0]}</h3><p>${lesson[1]}</p><pre></pre><button class="btn small" id="markLesson">${done?"این درس تکمیل شده ✓":"علامت‌گذاری به‌عنوان تکمیل‌شده"}</button>`;
+ content.querySelector("pre").textContent=lesson[2];
+ $("#markLesson").addEventListener("click",()=>{
+  const list=completed();if(!list.includes(key)){list.push(key);saveCompleted(list);}
+  renderLessonList();renderCourses();updateDashboard();showLesson(index);toast("پیشرفت درس ذخیره شد.");
+ });
+}
+function closeModal(){ $("#courseModal").classList.remove("open"); }
+$("#closeModal").addEventListener("click",closeModal);
+$("#courseModal").addEventListener("click",e=>{if(e.target.id==="courseModal")closeModal();});
+
+/* داشبورد */
+function updateDashboard(){
+ let total=0,done=0,started=0;
+ courses.forEach(course=>{const p=courseProgress(course);total+=p.total;done+=p.done;if(p.done)started++;});
+ const pct=total?Math.round(done/total*100):0;
+ $("#dashDone").textContent=done;$("#dashTotal").textContent=total;
+ $("#dashCourses").textContent=started;$("#dashPercent").textContent=pct+"%";
+ $("#dashLabel").textContent=pct+"%";$("#dashBar").style.width=pct+"%";
+}
+
+/* تم */
+function setTheme(theme){
+ document.body.classList.toggle("light",theme==="light");
+ $("#themeBtn").textContent=theme==="light"?"☀️":"🌙";
+ localStorage.setItem("cv_theme_v2",theme);
+}
+$("#themeBtn").addEventListener("click",()=>setTheme(document.body.classList.contains("light")?"dark":"light"));
+setTheme(localStorage.getItem("cv_theme_v2")||"dark");
+
+/* محیط سه‌زبانه */
+const starter={
+ html:'<main>\\n  <h1>سلام، برنامه‌نویس! 💜</h1>\\n  <p>اولین پروژه من در CODEVERSE</p>\\n  <button id="hello">کلیک کن</button>\\n</main>',
+ css:'body {\\n  font-family: Arial, sans-serif;\\n  text-align: center;\\n  padding: 35px;\\n  background: #f1eaff;\\n}\\nh1 { color: #7138d4; }\\nbutton { padding: 12px 20px; border: 0; border-radius: 10px; background: #7138d4; color: white; cursor: pointer; }',
+ js:'document.getElementById("hello")?.addEventListener("click", () => {\\n  alert("آفرین! کدت اجرا شد.");\\n});'
+};
+let activeTab="html";
+function activateTab(tab){
+ activeTab=tab;
+ $$(".tabbtn").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab));
+ $$(".editorarea").forEach(a=>a.classList.toggle("active",a.id==="editor-"+tab));
+}
+$$(".tabbtn").forEach(button=>button.addEventListener("click",()=>activateTab(button.dataset.tab)));
+function runProject(){
+ const html=$("#playground #editor-html").value;
+ const css=$("#playground #editor-css").value.replace(/<\/style/gi,"<\\/style");
+ const js=$("#playground #editor-js").value.replace(/<\/script/gi,"<\\/script");
+ const srcdoc=`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${html}<script>${js}<\/script></body></html>`;
+ $("#playground iframe#preview").srcdoc=srcdoc;toast("پروژه در پیش‌نمایش اجرا شد.");
+}
+$("#playground #runCode").addEventListener("click",runProject);
+$("#playground #resetEditor").addEventListener("click",()=>{
+ Object.keys(starter).forEach(key=>$("#editor-"+key).value=starter[key]);
+ runProject();toast("نمونه اولیه بازنشانی شد.");
+});
+$$("[data-jump-editor]").forEach(button=>button.addEventListener("click",()=>$("#playground").scrollIntoView({behavior:"smooth"})));
+runProject();
+
+/* آزمون */
+const questions=[
+ {q:"HTML چه نقشی در صفحه وب دارد؟",o:["ساختار محتوا","مدیریت پایگاه داده","ارسال ایمیل","ساخت سیستم‌عامل"],a:0},
+ {q:"کدام فناوری برای ظاهر و چیدمان صفحه است؟",o:["SQL","CSS","PHP","Git"],a:1},
+ {q:"کدام دستور در JavaScript مقدار را در کنسول می‌نویسد؟",o:["echo()","SELECT","console.log()","print_html()"],a:2},
+ {q:"کدام مورد یک زبان سمت سرور است؟",o:["HTML","CSS","PHP","SVG"],a:2},
+ {q:"کدام دستور SQL داده‌ها را می‌خواند؟",o:["SELECT","PAINT","STYLE","DISPLAY"],a:0}
+];
+let qIndex=0,score=0,answered=false,quizFinished=false;
+function renderQuestion(){
+ answered=false;quizFinished=false;
+ const q=questions[qIndex];$("#quizCount").textContent=`سؤال ${qIndex+1} از ${questions.length}`;
+ $("#quizQuestion").textContent=q.q;$("#quizOptions").innerHTML="";$("#quizResult").textContent="";$("#quizNext").style.display="none";
+ q.o.forEach((option,index)=>{
+  const button=document.createElement("button");button.className="option";button.textContent=option;
+  button.addEventListener("click",()=>answerQuestion(index));$("#quizOptions").appendChild(button);
+ });
+}
+function answerQuestion(index){
+ if(answered)return;answered=true;const correct=questions[qIndex].a;
+ $$("#quizOptions button").forEach((button,i)=>{button.disabled=true;if(i===correct)button.classList.add("correct");});
+ if(index===correct){score++;$("#quizResult").textContent="آفرین! پاسخ درست بود. 🎉";}
+ else{$$("#quizOptions button")[index].classList.add("wrong");$("#quizResult").textContent="این بار درست نبود؛ پاسخ صحیح مشخص شده است.";}
+ $("#quizNext").style.display="inline-block";
+ $("#quizNext").textContent=qIndex===questions.length-1?"دیدن نتیجه":"سؤال بعدی";
+}
+$("#quizNext").addEventListener("click",()=>{
+ if(quizFinished){qIndex=0;score=0;renderQuestion();return;}
+ if(qIndex<questions.length-1){qIndex++;renderQuestion();return;}
+ quizFinished=true;$("#quizCount").textContent="آزمون تمام شد";
+ $("#quizQuestion").textContent=`امتیاز تو: ${score} از ${questions.length}`;
+ $("#quizOptions").innerHTML="";$("#quizResult").textContent=score===questions.length?"عالی بود! همه پاسخ‌ها درست بود.":"برای بهتر شدن، درس‌ها را مرور کن و دوباره امتحان بده.";
+ $("#quizNext").textContent="شروع دوباره";
+});
+renderQuestion();
+
+/* پرسش‌های متداول */
+$$(".faq-q").forEach(button=>button.addEventListener("click",()=>button.parentElement.classList.toggle("open")));
+
+/* پروفایل محلی */
+function openProfile(){
+ $("#profileName").value=localStorage.getItem("cv_display_name")||"";
+ $("#profileModal").classList.add("open");
+}
+$("#profileBtn").addEventListener("click",openProfile);
+$("#closeProfile").addEventListener("click",()=>$("#profileModal").classList.remove("open"));
+$("#profileModal").addEventListener("click",e=>{if(e.target.id==="profileModal")$("#profileModal").classList.remove("open");});
+$("#saveProfile").addEventListener("click",()=>{
+ const name=$("#profileName").value.trim();
+ if(!name){toast("لطفاً یک نام وارد کن.");return;}
+ localStorage.setItem("cv_display_name",name);
+ $("#profileModal").classList.remove("open");$("#profileBtn").textContent=name;
+ toast("نام نمایشی ذخیره شد.");
+});
+const savedName=localStorage.getItem("cv_display_name");
+if(savedName)$("#profileBtn").textContent=savedName;
+
+/* بستن پنجره‌ها با Escape */
+document.addEventListener("keydown",event=>{
+ if(event.key==="Escape"){closeModal();$("#profileModal").classList.remove("open");}
+});
+
+/* شروع برنامه */
+$("#statCourses").textContent=courses.length+"+";
+renderCourses();
+updateDashboard();
+
+});</script>
+<section class="section" id="about">
+<div class="container">
+<span class="eyebrow">WHY CODEVERSE</span><h2 class="section-title">ابزارهای مسیر یادگیری</h2>
+<div class="features">
+<article class="feature"><div class="emoji">🧭</div><h3>مسیر مشخص</h3><p>دوره‌ها به دسته‌بندی تقسیم شده‌اند تا انتخاب مسیر آسان‌تر باشد.</p></article>
+<article class="feature"><div class="emoji">⌨️</div><h3>تمرین در مرورگر</h3><p>یک محیط ساده برای آزمایش HTML و CSS و JavaScript داری.</p></article>
+<article class="feature"><div class="emoji">📈</div><h3>پیگیری پیشرفت</h3><p>درس‌هایی را که تکمیل می‌کنی در همین مرورگر ذخیره می‌کنی.</p></article>
+<article class="feature"><div class="emoji">🧩</div><h3>چالش عملی</h3><p>تمرین‌های کوچک کمک می‌کنند آموخته‌ها را به کار ببری.</p></article>
+<article class="feature"><div class="emoji">📱</div><h3>واکنش‌گرا</h3><p>چیدمان صفحه برای نمایشگرهای کوچک و بزرگ تنظیم می‌شود.</p></article>
+<article class="feature"><div class="emoji">🌙</div><h3>حالت روشن و تاریک</h3><p>ظاهر سایت را با سلیقه خودت تغییر بده.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="faq">
+<div class="container">
+<span class="eyebrow">HELP CENTER</span><h2 class="section-title">پرسش‌های متداول</h2>
+<div class="faq">
+<div class="faq-item open"><button class="faq-q">آیا برای اجرای این فایل به اینترنت نیاز دارم؟ ＋</button><p class="faq-a">خود فایل و امکانات اصلی آن در مرورگر اجرا می‌شوند. فونت آنلاین ممکن است بدون اینترنت بارگذاری نشود.</p></div>
+<div class="faq-item"><button class="faq-q">پیشرفت من کجا ذخیره می‌شود؟ ＋</button><p class="faq-a">در حافظه محلی مرورگر همین دستگاه ذخیره می‌شود؛ با پاک کردن داده‌های سایت ممکن است از بین برود.</p></div>
+<div class="faq-item"><button class="faq-q">آیا حساب کاربری من واقعی است؟ ＋</button><p class="faq-a">خیر. نام نمایشی فقط در همین مرورگر ذخیره می‌شود. برای ورود واقعی و حساب مشترک، سرور و پایگاه داده لازم است.</p></div>
+<div class="faq-item"><button class="faq-q">آیا همه درس‌ها کامل هستند؟ ＋</button><p class="faq-a">این نسخه یک پایه قابل توسعه با درس‌های نمونه است؛ محتوای کامل و پروژه‌های هر دوره باید جداگانه تکمیل شوند.</p></div>
+</div>
+</div>
+</section>
+<div aria-labelledby="modalTitle" aria-modal="true" class="modal" id="courseModal" role="dialog">
+<div class="modal-card">
+<div class="modal-head"><h2 id="modalTitle">🌐 HTML از پایه</h2><button aria-label="بستن" class="close" id="closeModal">✕</button></div>
+<p class="sub" id="modalDescription">ساختار صفحه، متن، لینک، تصویر، فهرست و فرم.</p>
+<div class="progress" style="margin:18px 0"><span id="modalBar" style="width: 0%;"></span></div>
+<div class="sub" id="modalProgressText">0 از 5 درس تکمیل شده — 0٪</div>
+<div class="lesson-list" id="lessonList"><div class="lesson-row"><div><strong>1. آشنایی با HTML</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="0">شروع درس</button></div><div class="lesson-row"><div><strong>2. عنوان و پاراگراف</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="1">شروع درس</button></div><div class="lesson-row"><div><strong>3. لینک و تصویر</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="2">شروع درس</button></div><div class="lesson-row"><div><strong>4. فهرست‌ها</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="3">شروع درس</button></div><div class="lesson-row"><div><strong>5. فرم ساده</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="4">شروع درس</button></div></div>
+<div class="lesson-content" id="lessonContent"></div>
+</div>
+</div>
+<link href="IRANSansWeb(FaNum).ttf" rel="stylesheet"/>
+<div class="row"><div class="col">ستون</div></div>
+<script>
+    function greet(name) {
+ return "سلام " + name;
+}
+console.log(greet("دوست من"));
+</script>
+<div aria-labelledby="modalTitle" aria-modal="true" class="modal" id="courseModal" role="dialog">
+<div class="modal-card">
+<div class="modal-head"><h2 id="modalTitle">🐍 Python</h2><button aria-label="بستن" class="close" id="closeModal">✕</button></div>
+<p class="sub" id="modalDescription">مبانی پایتون، شرط، حلقه، تابع و ساختار داده.</p>
+<div class="progress" style="margin:18px 0"><span id="modalBar" style="width: 0%;"></span></div>
+<div class="sub" id="modalProgressText">0 از 4 درس تکمیل شده — 0٪</div>
+<div class="lesson-list" id="lessonList"><div class="lesson-row"><div><strong>1. شروع پایتون</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="0">شروع درس</button></div><div class="lesson-row"><div><strong>2. متغیرها</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="1">شروع درس</button></div><div class="lesson-row"><div><strong>3. شرط</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="2">شروع درس</button></div><div class="lesson-row"><div><strong>4. حلقه</strong><br/><small>درس آموزشی</small></div><button class="btn small" data-lesson="3">شروع درس</button></div></div>
+<div class="lesson-content show" id="lessonContent"><h3>شروع پایتون</h3><p>پایتون زبانی عمومی و خوانا برای کاربردهای گوناگون است.</p><pre>print("Hello World")</pre><button class="btn small" id="markLesson">علامت‌گذاری به‌عنوان تکمیل‌شده</button></div>
+</div>
+</div>
+<div aria-labelledby="profileTitle" aria-modal="true" class="modal" id="profileModal" role="dialog">
+<div class="modal-card">
+<div class="modal-head"><h2 id="profileTitle">پروفایل محلی</h2><button class="close" id="closeProfile">✕</button></div>
+<p class="sub">این پروفایل فقط روی همین مرورگر ذخیره می‌شود و حساب آنلاین نیست.</p>
+<div class="formrow"><label for="profileName">نام نمایشی</label><input id="profileName" maxlength="30" placeholder="نام خود را وارد کن"/></div>
+<button class="btn" id="saveProfile">ذخیره نام</button>
+</div>
+</div>
+<div aria-labelledby="profileTitle" aria-modal="true" class="modal" id="profileModal" role="dialog">
+<div class="modal-card">
+<div class="modal-head"><h2 id="profileTitle">پروفایل محلی</h2><button class="close" id="closeProfile">✕</button></div>
+<p class="sub">این پروفایل فقط روی همین مرورگر ذخیره می‌شود و حساب آنلاین نیست.</p>
+<div class="formrow"><label for="profileName">نام نمایشی</label><input id="profileName" maxlength="30" placeholder="نام خود را وارد کن"/></div>
+<button class="btn" id="saveProfile">ذخیره نام</button>
+</div>
+</div>
+<section class="section" id="courses">
+<div class="container">
+<div class="section-head">
+<div><span class="eyebrow">LEARNING PATHS</span><h2 class="section-title">مسیرهای یادگیری</h2><p class="sub">یک مسیر انتخاب کن و درس‌ها را به‌ترتیب جلو ببر.</p></div>
+<input aria-label="جستجوی دوره" class="search" id="searchInput" placeholder="🔎 جستجو در دوره‌ها..." type="search"/>
+</div>
+<div class="filters" id="filters">
+<button class="filter" data-filter="all">همه</button>
+<button class="filter" data-filter="web">طراحی وب</button>
+<button class="filter active" data-filter="programming">برنامه‌نویسی</button>
+<button class="filter" data-filter="database">پایگاه داده</button>
+<button class="filter" data-filter="tools">ابزارها</button>
+</div>
+<div class="course-grid" id="courseGrid"><article class="course"><div class="course-top"><div class="course-icon">⚡</div><span class="level">متوسط</span></div>
+<h3>JavaScript</h3><p>متغیر، شرط، حلقه، تابع، رویداد و DOM.</p>
+<div class="meta"><span>5 درس نمونه</span><span>0/5 تکمیل</span></div>
+<div class="progress"><span style="width:0%"></span></div>
+<div class="course-actions"><button class="btn small" data-open="js">ادامه مسیر</button><button aria-label="نشان کردن دوره" class="iconbtn" data-bookmark="js">☆</button></div></article><article class="course"><div class="course-top"><div class="course-icon">🐍</div><span class="level">مبتدی</span></div>
+<h3>Python</h3><p>مبانی پایتون، شرط، حلقه، تابع و ساختار داده.</p>
+<div class="meta"><span>4 درس نمونه</span><span>0/4 تکمیل</span></div>
+<div class="progress"><span style="width:0%"></span></div>
+<div class="course-actions"><button class="btn small" data-open="python">ادامه مسیر</button><button aria-label="نشان کردن دوره" class="iconbtn" data-bookmark="python">☆</button></div></article><article class="course"><div class="course-top"><div class="course-icon">🐘</div><span class="level">متوسط</span></div>
+<h3>PHP</h3><p>مبانی PHP، متغیرها، شرط‌ها، فرم و سرور.</p>
+<div class="meta"><span>3 درس نمونه</span><span>3/3 تکمیل</span></div>
+<div class="progress"><span style="width:100%"></span></div>
+<div class="course-actions"><button class="btn small" data-open="php">ادامه مسیر</button><button aria-label="نشان کردن دوره" class="iconbtn" data-bookmark="php">☆</button></div></article><article class="course"><div class="course-top"><div class="course-icon">🟢</div><span class="level">پیشرفته</span></div>
+<h3>Node.js</h3><p>اجرای JavaScript خارج از مرورگر و ساخت سرور.</p>
+<div class="meta"><span>2 درس نمونه</span><span>0/2 تکمیل</span></div>
+<div class="progress"><span style="width:0%"></span></div>
+<div class="course-actions"><button class="btn small" data-open="node">ادامه مسیر</button><button aria-label="نشان کردن دوره" class="iconbtn" data-bookmark="node">☆</button></div></article></div>
+</div>
+</section>
+<section class="section" id="dashboard">
+<div class="container">
+<div class="dashboard">
+<span class="eyebrow">YOUR LEARNING SPACE</span>
+<h2 class="section-title">داشبورد پیشرفت</h2>
+<p class="sub">پیشرفت این مرورگر به‌صورت محلی ذخیره می‌شود.</p>
+<div class="dash-grid">
+<div class="dash-item"><strong id="dashDone">7</strong><span>درس تکمیل‌شده</span></div>
+<div class="dash-item"><strong id="dashTotal">37</strong><span>کل درس‌های نمونه</span></div>
+<div class="dash-item"><strong id="dashCourses">3</strong><span>دوره شروع‌شده</span></div>
+<div class="dash-item"><strong id="dashPercent">19%</strong><span>پیشرفت کلی</span></div>
+</div>
+<div class="dash-wide"><div style="display:flex;justify-content:space-between;gap:10px"><strong>مسیر کلی یادگیری</strong><span id="dashLabel">19%</span></div><div class="progress"><span id="dashBar" style="width: 19%;"></span></div></div>
+</div>
+</div>
+</section>
+<section class="section" id="playground">
+<div class="container">
+<div class="section-head"><div><span class="eyebrow">CODE PLAYGROUND</span><h2 class="section-title">آزمایشگاه کدنویسی</h2><p class="sub">HTML، CSS و JavaScript را جداگانه بنویس و خروجی را ببین.</p></div></div>
+<div class="workspace">
+<div class="editor-toolbar">
+<div class="tabs">
+<button class="tabbtn active" data-tab="html">HTML</button>
+<button class="tabbtn" data-tab="css">CSS</button>
+<button class="tabbtn" data-tab="js">JavaScript</button>
+</div>
+<div class="actions">
+<button class="btn secondary small" id="resetEditor">بازنشانی نمونه</button>
+<button class="btn small" id="runCode">▶ اجرای پروژه</button>
+</div>
+</div>
+<textarea aria-label="کد HTML" class="editorarea active" id="editor-html" spellcheck="false">&lt;main&gt;
+  &lt;h1&gt;سلام، برنامه‌نویس! 💜&lt;/h1&gt;
+  &lt;p&gt;اولین پروژه من در CODEVERSE&lt;/p&gt;
+  &lt;button id="hello"&gt;کلیک کن&lt;/button&gt;
+&lt;/main&gt;</textarea>
+<textarea aria-label="کد CSS" class="editorarea" id="editor-css" spellcheck="false">body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 35px;
+  background: #f1eaff;
+}
+h1 { color: #7138d4; }
+button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #7138d4;
+  color: white;
+  cursor: pointer;
+}</textarea>
+<textarea aria-label="کد JavaScript" class="editorarea" id="editor-js" spellcheck="false">document.getElementById("hello")
+  .addEventListener("click", () =&gt; {
+    alert("آفرین! کدت اجرا شد.");
+  });</textarea>
+<div class="preview-head"><strong>پیش‌نمایش خروجی</strong><span class="sub">اجرا در قاب ایزوله مرورگر</span></div>
+<iframe id="preview" sandbox="allow-scripts" srcdoc='&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;style&gt;body {\n  font-family: Arial, sans-serif;\n  text-align: center;\n  padding: 35px;\n  background: #f1eaff;\n}\nh1 { color: #7138d4; }\nbutton { padding: 12px 20px; border: 0; border-radius: 10px; background: #7138d4; color: white; cursor: pointer; }&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;من برنامه‌نویس می‌شوم&lt;/h1&gt;
+button.addEventListener("click", ...)
+&lt;script&gt;document.getElementById("hello")?.addEventListener("click", () =&gt; {\n  alert("آفرین! کدت اجرا شد.");\n});&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;' title="پیش‌نمایش کد کاربر"></iframe>
+</div>
+</div>
+</section>
+<section class="section" id="challenge">
+<div class="container">
+<span class="eyebrow">PRACTICE ZONE</span><h2 class="section-title">چالش‌های کوچک</h2>
+<p class="sub">تمرین‌های کوتاه برای محک زدن مهارتت.</p>
+<div class="challenge-grid" style="margin-top:22px">
+<article class="challenge"><span class="eyebrow">CHALLENGE 01</span><h3>اولین عنوان</h3><p>در ویرایشگر، یک عنوان با متن «من برنامه‌نویس می‌شوم» بساز و رنگ آن را بنفش کن.</p><code>&lt;h1&gt;من برنامه‌نویس می‌شوم&lt;/h1&gt;</code><button class="btn secondary small" data-jump-editor="">رفتن به ویرایشگر</button></article>
+<article class="challenge"><span class="eyebrow">CHALLENGE 02</span><h3>دکمه تعاملی</h3><p>یک دکمه بساز که با کلیک روی آن یک پیام نمایش داده شود.</p><code>button.addEventListener("click", ...)</code><button class="btn secondary small" data-jump-editor="">رفتن به ویرایشگر</button></article>
+</div>
+</div>
+</section>
+<section class="section" id="faq">
+<div class="container">
+<span class="eyebrow">HELP CENTER</span><h2 class="section-title">پرسش‌های متداول</h2>
+<div class="faq">
+<div class="faq-item open"><button class="faq-q">آیا برای اجرای این فایل به اینترنت نیاز دارم؟ ＋</button><p class="faq-a">خود فایل و امکانات اصلی آن در مرورگر اجرا می‌شوند. فونت آنلاین ممکن است بدون اینترنت بارگذاری نشود.</p></div>
+<div class="faq-item open"><button class="faq-q">پیشرفت من کجا ذخیره می‌شود؟ ＋</button><p class="faq-a">در حافظه محلی مرورگر همین دستگاه ذخیره می‌شود؛ با پاک کردن داده‌های سایت ممکن است از بین برود.</p></div>
+<div class="faq-item open"><button class="faq-q">آیا حساب کاربری من واقعی است؟ ＋</button><p class="faq-a">خیر. نام نمایشی فقط در همین مرورگر ذخیره می‌شود. برای ورود واقعی و حساب مشترک، سرور و پایگاه داده لازم است.</p></div>
+<div class="faq-item open"><button class="faq-q">آیا همه درس‌ها کامل هستند؟ ＋</button><p class="faq-a">این نسخه یک پایه قابل توسعه با درس‌های نمونه است؛ محتوای کامل و پروژه‌های هر دوره باید جداگانه تکمیل شوند.</p></div>
+</div>
+</div>
+</section>
+<section class="section" id="about">
+<div class="container">
+<span class="eyebrow">WHY CODEVERSE</span><h2 class="section-title">ابزارهای مسیر یادگیری</h2>
+<div class="features">
+<article class="feature"><div class="emoji">🧭</div><h3>مسیر مشخص</h3><p>دوره‌ها به دسته‌بندی تقسیم شده‌اند تا انتخاب مسیر آسان‌تر باشد.</p></article>
+<article class="feature"><div class="emoji">⌨️</div><h3>تمرین در مرورگر</h3><p>یک محیط ساده برای آزمایش HTML و CSS و JavaScript داری.</p></article>
+<article class="feature"><div class="emoji">📈</div><h3>پیگیری پیشرفت</h3><p>درس‌هایی را که تکمیل می‌کنی در همین مرورگر ذخیره می‌کنی.</p></article>
+<article class="feature"><div class="emoji">🧩</div><h3>چالش عملی</h3><p>تمرین‌های کوچک کمک می‌کنند آموخته‌ها را به کار ببری.</p></article>
+<article class="feature"><div class="emoji">📱</div><h3>واکنش‌گرا</h3><p>چیدمان صفحه برای نمایشگرهای کوچک و بزرگ تنظیم می‌شود.</p></article>
+<article class="feature"><div class="emoji">🌙</div><h3>حالت روشن و تاریک</h3><p>ظاهر سایت را با سلیقه خودت تغییر بده.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="quiz">
+<div class="container">
+<span class="eyebrow">KNOWLEDGE CHECK</span><h2 class="section-title">آزمون مقدماتی وب</h2>
+<p class="sub">پاسخ درست را انتخاب کن؛ در پایان امتیازت را می‌بینی.</p>
+<div class="panel quizbox" style="margin-top:22px">
+<div class="quiz-count" id="quizCount">سؤال 1 از 5</div>
+<h3 class="question" id="quizQuestion">HTML چه نقشی در صفحه وب دارد؟</h3>
+<div class="options" id="quizOptions"><button class="option">ساختار محتوا</button><button class="option">مدیریت پایگاه داده</button><button class="option">ارسال ایمیل</button><button class="option">ساخت سیستم‌عامل</button></div>
+<div aria-live="polite" class="quiz-result" id="quizResult"></div>
+<button class="btn" id="quizNext" style="display: none;">شروع دوباره</button>
+</div>
+</div>
+</section>
+<section class="section" id="challenge">
+<div class="container">
+<span class="eyebrow">PRACTICE ZONE</span><h2 class="section-title">چالش‌های کوچک</h2>
+<p class="sub">تمرین‌های کوتاه برای محک زدن مهارتت.</p>
+<div class="challenge-grid" style="margin-top:22px">
+<article class="challenge"><span class="eyebrow">CHALLENGE 01</span><h3>اولین عنوان</h3><p>در ویرایشگر، یک عنوان با متن «من برنامه‌نویس می‌شوم» بساز و رنگ آن را بنفش کن.</p><code>&lt;h1&gt;من برنامه‌نویس می‌شوم&lt;/h1&gt;</code><button class="btn secondary small" data-jump-editor="">رفتن به ویرایشگر</button></article>
+<article class="challenge"><span class="eyebrow">CHALLENGE 02</span><h3>دکمه تعاملی</h3><p>یک دکمه بساز که با کلیک روی آن یک پیام نمایش داده شود.</p><code>button.addEventListener("click", ...)</code><button class="btn secondary small" data-jump-editor="">رفتن به ویرایشگر</button></article>
+</div>
+</div>
+</section>
+<header class="topbar">
+<div class="container nav">
+<a class="brand" href="#home">CODE<span>VERSE</span></a>
+<nav class="navlinks">
+<a href="#home">خانه</a><a href="#courses">دوره‌ها</a><a href="#dashboard">داشبورد</a>
+<a href="#playground">محیط کدنویسی</a><a href="#quiz">آزمون</a><a href="#about">درباره</a>
+</nav>
+<div class="navtools">
+<button aria-label="تغییر تم" class="iconbtn" id="themeBtn">🌙</button>
+<button class="btn small" id="profileBtn">اهورا</button>
+</div>
+</div>
+</header>
+<div class="stat"><strong>۵</strong><span>سؤال آزمون نمونه</span></div>
+<div class="stat"><strong>۲۴/۷</strong><span>دسترسی به فایل محلی</span></div>
+<div class="stat"><strong id="statCourses">12+</strong><span>مسیر آموزشی نمونه</span></div>
+<div aria-labelledby="profileTitle" aria-modal="true" class="modal" id="profileModal" role="dialog">
+<div class="modal-card">
+<div class="modal-head"><h2 id="profileTitle">پروفایل محلی</h2><button class="close" id="closeProfile">✕</button></div>
+<p class="sub">این پروفایل فقط روی همین مرورگر ذخیره می‌شود و حساب آنلاین نیست.</p>
+<div class="formrow"><label for="profileName">نام نمایشی</label><input id="profileName" maxlength="30" placeholder="نام خود را وارد کن"/></div>
+<button class="btn" id="saveProfile">ذخیره نام</button>
+</div>
+</div>
+<div class="editor-toolbar">
+<div class="tabs">
+<button class="tabbtn active" data-tab="html">HTML</button>
+<button class="tabbtn" data-tab="css">CSS</button>
+<button class="tabbtn" data-tab="js">JavaScript</button>
+</div>
+<div class="actions">
+<button class="btn secondary small" id="resetEditor">بازنشانی نمونه</button>
+<button class="btn small" id="runCode">▶ اجرای پروژه</button>
+</div>
+</div>
+<div class="workspace">
+<div class="editor-toolbar">
+<div class="tabs">
+<button class="tabbtn active" data-tab="html">HTML</button>
+<button class="tabbtn" data-tab="css">CSS</button>
+<button class="tabbtn" data-tab="js">JavaScript</button>
+</div>
+<div class="actions">
+<button class="btn secondary small" id="resetEditor">بازنشانی نمونه</button>
+<button class="btn small" id="runCode">▶ اجرای پروژه</button>
+</div>
+</div>
+<textarea aria-label="کد HTML" class="editorarea active" id="editor-html" spellcheck="false">&lt;main&gt;
+  &lt;h1&gt;سلام، برنامه‌نویس! 💜&lt;/h1&gt;
+  &lt;p&gt;اولین پروژه من در CODEVERSE&lt;/p&gt;
+  &lt;button id="hello"&gt;کلیک کن&lt;/button&gt;
+&lt;/main&gt;</textarea>
+<textarea aria-label="کد CSS" class="editorarea" id="editor-css" spellcheck="false">body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 35px;
+  background: #f1eaff;
+}
+h1 { color: #7138d4; }
+button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #7138d4;
+  color: white;
+  cursor: pointer;
+}</textarea>
+<textarea aria-label="کد JavaScript" class="editorarea" id="editor-js" spellcheck="false">document.getElementById("hello")
+  .addEventListener("click", () =&gt; {
+    alert("آفرین! کدت اجرا شد.");
+  });</textarea>
+<div class="preview-head"><strong>پیش‌نمایش خروجی</strong><span class="sub">اجرا در قاب ایزوله مرورگر</span></div>
+<iframe id="preview" sandbox="allow-scripts" srcdoc='&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;style&gt;body {\n  font-family: Arial, sans-serif;\n  text-align: center;\n  padding: 35px;\n  background: #f1eaff;\n}\nh1 { color: #7138d4; }\nbutton { padding: 12px 20px; border: 0; border-radius: 10px; background: #7138d4; color: white; cursor: pointer; }&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;من برنامه‌نویس می‌شوم&lt;/h1&gt;
+button.addEventListener("click", ...)
+&lt;script&gt;document.getElementById("hello")?.addEventListener("click", () =&gt; {\n  alert("آفرین! کدت اجرا شد.");\n});&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;' title="پیش‌نمایش کد کاربر"></iframe>
+</div>
+<textarea aria-label="کد JavaScript" class="editorarea" id="editor-js" spellcheck="false">document.getElementById("hello")
+  .addEventListener("click", () =&gt; {
+    alert("آفرین! کدت اجرا شد.");
+  });</textarea>
+<textarea aria-label="کد JavaScript" class="editorarea" id="editor-js" spellcheck="false">document.getElementById("hello")
+  .addEventListener("click", () =&gt; {
+    alert("آفرین! کدت اجرا شد.");
+  });</textarea>
+<div class="preview-head"><strong>پیش‌نمایش خروجی</strong><span class="sub">اجرا در قاب ایزوله مرورگر</span></div>
+<iframe id="preview" sandbox="allow-scripts" srcdoc='&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;style&gt;body {\n  font-family: Arial, sans-serif;\n  text-align: center;\n  padding: 35px;\n  background: #f1eaff;\n}\nh1 { color: #7138d4; }\nbutton { padding: 12px 20px; border: 0; border-radius: 10px; background: #7138d4; color: white; cursor: pointer; }&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;من برنامه‌نویس می‌شوم&lt;/h1&gt;
+button.addEventListener("click", ...)
+&lt;script&gt;document.getElementById("hello")?.addEventListener("click", () =&gt; {\n  alert("آفرین! کدت اجرا شد.");\n});&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;' title="پیش‌نمایش کد کاربر"></iframe><iframe id="preview" sandbox="allow-scripts" srcdoc='&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;style&gt;body {\n  font-family: Arial, sans-serif;\n  text-align: center;\n  padding: 35px;\n  background: #f1eaff;\n}\nh1 { color: #7138d4; }\nbutton { padding: 12px 20px; border: 0; border-radius: 10px; background: #7138d4; color: white; cursor: pointer; }&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;من برنامه‌نویس می‌شوم&lt;/h1&gt;
+button.addEventListener("click", ...)
+&lt;script&gt;document.getElementById("hello")?.addEventListener("click", () =&gt; {\n  alert("آفرین! کدت اجرا شد.");\n});&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;' title="پیش‌نمایش کد کاربر"></iframe>
+<footer class="footer"><div class="container"><a class="brand" href="#home">CODE<span>VERSE</span></a><p>یاد بگیر، تمرین کن، بساز و پیشرفت کن.</p><p>© 2026 CODEVERSE — پروژه آموزشی مستقل</p></div></footer>
+<div class="workspace">
+<div class="editor-toolbar">
+<div class="tabs">
+<button class="tabbtn active" data-tab="html">HTML</button>
+<button class="tabbtn" data-tab="css">CSS</button>
+<button class="tabbtn" data-tab="js">JavaScript</button>
+</div>
+<div class="actions">
+<button class="btn secondary small" id="resetEditor">بازنشانی نمونه</button>
+<button class="btn small" id="runCode">▶ اجرای پروژه</button>
+</div>
+</div>
+<textarea aria-label="کد HTML" class="editorarea active" id="editor-html" spellcheck="false">&lt;main&gt;
+  &lt;h1&gt;سلام، برنامه‌نویس! 💜&lt;/h1&gt;
+  &lt;p&gt;اولین پروژه من در CODEVERSE&lt;/p&gt;
+  &lt;button id="hello"&gt;کلیک کن&lt;/button&gt;
+&lt;/main&gt;</textarea>
+<textarea aria-label="کد CSS" class="editorarea" id="editor-css" spellcheck="false">body {
+    <style>
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 35px;
+  background: #f1eaff;
+}
+h1 { color: #7138d4; }
+button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #7138d4;
+  color: white;
+  cursor: pointer;
+  </style>
+
+  &lt;
+}</textarea>
+<textarea aria-label="کد JavaScript" class="editorarea" id="editor-js" spellcheck="false">document.getElementById("hello")
+  .addEventListener("click", () =&gt; {
+    alert("آفرین! کدت اجرا شد.");
+  });</textarea>
+<div class="preview-head"><strong>پیش‌نمایش خروجی</strong><span class="sub">اجرا در قاب ایزوله مرورگر</span></div>
+<iframe id="preview" sandbox="allow-scripts" srcdoc='&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;style&gt;body {\n  font-family: Arial, sans-serif;\n  text-align: center;\n  padding: 35px;\n  background: #f1eaff;\n}\nh1 { color: #7138d4; }\nbutton { padding: 12px 20px; border: 0; border-radius: 10px; background: #7138d4; color: white; cursor: pointer; }&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;من برنامه‌نویس می‌شوم&lt;/h1&gt;
+button.addEventListener("click", ...)
+&lt;script&gt;document.getElementById("hello")?.addEventListener("click", () =&gt; {\n  alert("آفرین! کدت اجرا شد.");\n});&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;' title="پیش‌نمایش کد کاربر"></iframe>
+</div>
+<command/>
+<div class="workspace">
+<div class="editor-toolbar">
+<div class="tabs">
+<button class="tabbtn active" data-tab="html">HTML</button>
+<button class="tabbtn" data-tab="css">CSS</button>
+<button class="tabbtn" data-tab="js">JavaScript</button>
+</div>
+<div class="actions">
+<button class="btn secondary small" id="resetEditor">بازنشانی نمونه</button>
+<button class="btn small" id="runCode">▶ اجرای پروژه</button>
+</div>
+</div>
+<textarea aria-label="کد HTML" class="editorarea active" id="editor-html" spellcheck="false">&lt;main&gt;
+  &lt;h1&gt;سلام، برنامه‌نویس! 💜&lt;/h1&gt;
+  &lt;p&gt;اولین پروژه من در CODEVERSE&lt;/p&gt;
+  &lt;button id="hello"&gt;کلیک کن&lt;/button&gt;
+&lt;/main&gt;</textarea>
+<textarea aria-label="کد CSS" class="editorarea" id="editor-css" spellcheck="false">body {
+    <style>
+    
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 35px;
+  background: #f1eaff;
+}
+h1 { color: #7138d4; }
+button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #7138d4;
+  color: white;
+  cursor: pointer;
+}</textarea> 
+   <textarea class="editorarea" id="editor-js" spellcheck="false" aria-label="کد JavaScript">document.getElementById("hello")
+  .addEventListener("click", () =&gt; {
+    alert("آفرین! کدت اجرا شد.");
+  });</textarea>
+   </style>
+
+   <div class="preview-head"><strong>پیش‌نمایش خروجی</strong><span class="sub">اجرا در قاب ایزوله مرورگر</span></div>
+   <iframe id="preview" sandbox="allow-scripts" srcdoc='&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;style&gt;body {\n  font-family: Arial, sans-serif;\n  text-align: center;\n  padding: 35px;\n  background: #f1eaff;\n}\nh1 { color: #7138d4; }\nbutton { padding: 12px 20px; border: 0; border-radius: 10px; background: #7138d4; color: white; cursor: pointer; }&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;من برنامه‌نویس می‌شوم&lt;/h1&gt;
+button.addEventListener("click", ...)
+&lt;script&gt;document.getElementById("hello")?.addEventListener("click", () =&gt; {\n  alert("آفرین! کدت اجرا شد.");\n});&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;' title="پیش‌نمایش کد کاربر"></iframe>
+  </textarea></div>
+<form action="IRANSansWeb(FaNum).ttf" method="post">10</form>
+<picture>
+<source media="(min-width: )" srcset="asr"/>
+<img alt="" src="ai.jpg"/>
+</picture>
+<div aria-label="با صدا جستجو کنید" class="b_icon tooltip" data-sbtipx="با صدا جستجو کنید" data-tooltip="با صدا جستجو کنید" role="button" tabindex="0"></div>
+<div dir="rtl" id="sw_as" style="display: block; margin-left: 0px; margin-right: -1px;"><div class="sa_as" data-priority="2" dir="rtl" style="display: none;"></div><div aria-atomic="true" aria-live="polite" role="status" style="position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border: 0px;"></div></div>
+<div aria-label="موارد برگزیده و جوایز حساب" class="id_tooltip_container" data-bm="3" data-priority="2" id="id_h" role="complementary"><span class="b_hide langdisp" id="langChange"><a data-noajax="1" h="ID=SERP,5027.1" href="/search?q=%d8%a7%d9%87%d9%86%da%af+%d8%b4%d8%a7%d8%af&amp;cvid=78085e4bde4c4bc5b33580f2a9ce650b&amp;gs_lcrp=EgRlZGdlKgYIAxAAGEAyBwgAEAAY-QcyBggBEEUYOTIGCAIQABhAMgYIAxAAGEAyBggEEAAYQDIGCAUQABhAMgYIBhAAGEAyBggHEAAYQDIGCAgQABhAMgYICRAAGEDSAQkxNDY5OWowajmoAgiwAgE&amp;FORM=ANAB01&amp;PC=EDGEDB&amp;setlang=en&amp;sid=31C212B908C862870BCC0AAF096E6312">English</a></span><a aria-controls="id_d" aria-haspopup="true" aria-label="Hadis" class="id_button linkBtn" data-clarity-mask="true" h="ID=SERP,5036.1" href="javascript:void(0)" id="id_l" role="button"><div class="b_hide"> <span class="cbtn" data-appns="SERP" data-k="5061.1" id="709015_1_btn"><input aria-label="" name="submit" type="submit" value="ورود به سیستم"/></span></div><span aria-hidden="true" aria-label="ورود به سیستم" class="sw_spd id_avatar" id="id_a" style="display:none"></span><img alt="" class="id_avatar sw_spd" data-alt="" data-bm="28" data-src="https://storage.live.com/users/0xc767dc40adce04f2/myprofile/expressionprofile/profilephoto:UserTileStatic/p?ck=1&amp;ex=720&amp;sid=31C212B908C862870BCC0AAF096E6312&amp;fofoff=1" id="id_p" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII="/></a><span _iid="SERP.5043" id="id_d"></span><span _iid="SERP.5042" aria-hidden="true" aria-labelledby="id_sc" class="slide_up nohpfo" id="id_hbfo" role="menu" tabindex="-1"></span></div>
+<nav aria-label="فیلتر جستجو" class="b_scopebar" data-bm="0" role="navigation"><ul><li class="b_active" data-menuurl="" data-query="" id="b-scopeListItem-web"><a aria-current="page" class="" disableredirectlink="False" h="ID=SERP,5019.1" href="/?scope=web&amp;FORM=HDRSC1" target="_blank">همه</a></li><li class="" data-menuurl="" data-query="" id="b-scopeListItem-copilotsearch"><a aria-current="false" class="" disableredirectlink="False" h="ID=SERP,5026.1" href="/copilotsearch?q=%d8%a7%d9%87%d9%86%da%af+%d8%b4%d8%a7%d8%af&amp;FORM=CSSCOP"><svg aria-hidden="true" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M12.993 3.429c1.953 0 3.393 1.867 2.915 3.794l-1.424 5.727C14.037 14.743 12.45 16 10.63 16H7.324c-1.945 0-3.375-1.851-2.915-3.77l.088-.366a.565.565 0 0 1 .546-.436H7.05a1.88 1.88 0 0 0 1.816-1.432L9.84 6.14a.56.56 0 0 1 .684-.41c.301.078.483.39.405.695l-.972 3.853c-.34 1.348-1.536 2.292-2.906 2.292H5.49c-.237 1.174.643 2.286 1.835 2.286h3.306c1.304 0 2.443-.901 2.763-2.187l1.424-5.726c.298-1.202-.6-2.372-1.824-2.372A.57.57 0 0 1 12.431 4c0-.316.252-.572.563-.572M8.676 0c1.945 0 3.376 1.851 2.915 3.77l-.088.366a.566.566 0 0 1-.546.436H8.95a1.88 1.88 0 0 0-1.816 1.432L6.16 9.86a.56.56 0 0 1-.684.41.573.573 0 0 1-.406-.695l.973-3.853c.34-1.349 1.536-2.292 2.906-2.292h1.56c.238-1.174-.642-2.286-1.834-2.286H5.37A2.86 2.86 0 0 0 2.607 3.33L1.183 9.056c-.298 1.202.6 2.372 1.824 2.372.31 0 .563.256.563.571a.57.57 0 0 1-.563.572c-1.953 0-3.393-1.867-2.915-3.794L1.516 3.05C1.962 1.256 3.55 0 5.37 0z" fill="currentColor"></path></svg>حالت هوش مصنوعی</a></li><li class="" data-menuurl="" data-query="" id="b-scopeListItem-images"><a aria-current="false" class="" disableredirectlink="False" h="ID=SERP,5021.1" href="/images/search?q=%d8%a7%d9%87%d9%86%da%af+%d8%b4%d8%a7%d8%af&amp;FORM=HDRSC3" target="_blank">تصاویر</a></li><li class="" data-menuurl="" data-query="" id="b-scopeListItem-video"><a aria-current="false" class="" disableredirectlink="False" h="ID=SERP,5022.1" href="/videos/search?q=%d8%a7%d9%87%d9%86%da%af+%d8%b4%d8%a7%d8%af&amp;FORM=HDRSC4" target="_blank">ویدیوها</a></li><li class="" data-menuurl="" data-query="" id="b-scopeListItem-local"><a aria-current="false" class="" disableredirectlink="False" h="ID=SERP,5023.1" href="/maps?q=%d8%a7%d9%87%d9%86%da%af+%d8%b4%d8%a7%d8%af&amp;FORM=HDRSC6" target="_blank">نقشه‌ها</a></li><li class="" data-menuurl="" data-query="" id="b-scopeListItem-news"><a aria-current="false" class="" disableredirectlink="False" h="ID=SERP,5024.1" href="/news/search?q=%d8%a7%d9%87%d9%86%da%af+%d8%b4%d8%a7%d8%af&amp;FORM=HDRSC7" target="_blank">اخبار</a></li><li id="b-scopeListItem-menu"><a aria-current="false" aria-haspopup="true" href="javascript:void(0);" role="button" tabindex="0" target="_self"><span class="b_sp_menu_separ"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></span>موارد بیشتر</a><div class="b_sp_over_cont"><ul class="b_sp_over_menu"><li class="b_sp_over_item b_scopebar_item" data-menuurl="" data-query="" id="b-scopeListItem-flights"><a aria-current="false" class="" disableredirectlink="False" h="ID=SERP,5025.1" href="/travel/search?q=%d8%a7%d9%87%d9%86%da%af+%d8%b4%d8%a7%d8%af&amp;m=flights&amp;FORM=FBSCOP" target="_blank">پروازها</a></li><li class="b_sp_over_item b_scopebar_item" id="scope_tools_wrapper"><a class="linkBtn" h="ID=SERP,5034.1" href="javascript:void(0)">ابزارها</a></li></ul></div></li></ul></nav>
+<footer class="b_footer" data-bm="25" data-priority="2" id="b_footer"><div id="b_footerItems"><ul><li><a h="ID=SERP,5049.1" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="sb_privacy" target="_blank">حریم خصوصی</a></li><li><a h="ID=SERP,5050.1" href="https://go.microsoft.com/fwlink/?LinkID=246338" id="sb_legal" target="_blank">شرایط</a></li></ul></div><!--foo--></footer>
+<link as="style" crossorigin="anonymous" fetchpriority="low" href="https://r.bing.com/rb/H/cir3,rtl,cc,nc/9ueeNNVbWRtoB3OLZmTFjPJZ1GI.css?bu=DY4HtgawBrIGrgbfArQGuwbfAqoGkQe4BswF&amp;or=w" id="as-css-link" rel="stylesheet" type="text/css"/>
+<link href="شاهد.py" rel="stylesheet"/>
+<a href="https://copilot.microsoft.com/?dpwa=1">برای یادگیری بیشتر روی این دکمه بزنید</a>
+<select disabled="disabled" id="" name=""></select>
+<a class="zas" href="tel:+09168462146">aa</a>
+<area alt="100" coords="10" href="لللللللللل.html" shape="poly"/>
+<style>
+        .ah{
+    color: #af2929;
+    background-color: aqua;
+    font-size: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400px;
+text-align: center;
+}
+.fl {
+    background-color:green;
+
+
+div{
+    background-color: aquamarine;
+}
+
+body {
+    background-color: #f0f4ff;
+    font-family: Tahoma, sans-serif;
+    direction: rtl;
+}
+
+h1 {
+    color: #6c3ce9;
+    text-align: center;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.app {
+ color: #2aac1e;
+    background-color: rgb(97, 165, 83);
+    font-size: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300px;
+text-align: center;
+}
+.search {
+    width: 320px;
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    background: #151321;
+    border: 1px solid #302a45;
+    border-radius: 13px;
+    padding: 12px 42px 12px 14px;
+    color: white;
+    outline: none;
+}
+
+.search span {
+    position: absolute;
+    right: 14px;
+    top: 8px;
+    color: #aaa5bd;
+}
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin: 20px auto;
+  background: #f1f2f4;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.search-icon {
+  font-size: 27px;
+  color: #777;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #222;
+  direction: rtl;
+}
+
+.suggestions {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #0002;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.suggestions div {
+  padding: 13px;
+  cursor: pointer;
+  direction: rtl;
+}
+
+.suggestions div:hover {
+  background: #f2efff;
+}
+button{
+    color: #ff0000;
+    left:auto
+    inherit
+    unset
+    
+    
+    
+    ;
+    -ms-scroll-limit-y-max: 0dvh;
+}
+asw.{
+    color: #ff0000;
+}
+
+.code-library {
+    padding: 25px;
+    direction: rtl;
+}
+
+.code-library h2 {
+    color: #8b5cf6;
+    text-align: center;
+}
+
+.code-card {
+    background: #171717;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border: 1px solid #7045d8;
+}
+
+.code-card pre {
+    direction: ltr;
+    text-align: left;
+    background: #252525;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.code-card button {
+    background: #7045d8;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.code-card button:hover {
+    background: #9b70ff;
+
+
+
+
+
+    
+
+
+    </style>
+<ul>
+<li><a class="emoji" href="">بارگیری ها</a></li>
+<li><a class="emoji" href="aww.html">اموزش ها</a></li>
+<li><a class="emoji" href="azx.html">بیشترین مرور در برنامه نویسی</a></li>
+<li><a class="emoji" href="">پایانه سایت</a></li>
+</ul>
+<div id="main-message">
+<h1>
+<span>به نظر می‌رسد به اینترنت متصل نیستید</span>
+</h1>
+<!--?lit$275053091$-->
+<p>بیایید آنلاین شوید!</p>
+<div class="hidden" id="diagnose-frame"></div>
+<!--?lit$275053091$-->
+<div class="error-code"><!--?lit$275053091$-->ERR_INTERNET_DISCONNECTED</div>
+<!--?lit$275053091$-->
+</div>
+<div>
+<!---123$lax-->
+<id=<img alt="" src="ajsifieofeifu3igurigjigurigribgdkgirivkdkahorayganh@j.img">
+<div id="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"></div>
+</id=<img></div>
+<div autocomplete="off" class="composer_rich_textarea" contenteditable="true" dir="auto" placeholder="پیام بنویسید..."></div>
+<div class="chat-input-content"><div class="rows-wrapper chat-input-wrapper" text-editor=""><svg class="bubble-tail" height="20" viewbox="0 0 11 20" width="11"><use href="#message-tail-filled"></use></svg><div class="reply-wrapper"><!-- --></div><div class="autocomplete-helper z-depth-1 stickers-helper" rb-composer-dropdown=""><div class="scrollable is-mention scrollable-y"><!-- --><!-- --><!-- --><!-- --></div></div><div class="new-message-wrapper"><button class="btn-icon rbico-none toggle-emoticons"></button><div class="input-message-container"><div class="input-message-input scrollable scrollable-y"><div class="im_inline_placeholder_wrap"><span class="im_inline_placeholder_prefix"></span><span class="im_inline_placeholder"></span></div><div autocomplete="off" class="composer_rich_textarea" contenteditable="true" dir="auto" placeholder="پیام بنویسید..."></div><textarea class="input-message-input scrollable scrollable-y input-field-input-fake ng-untouched ng-pristine ng-valid" dir="auto" name="draftMessage" ng-trim="false" style="display: none;"></textarea></div></div><button class="btn-icon rbico-scheduled btn-scheduled float hide show"></button><!-- --><!-- --><div class="btn-icon btn-menu-toggle attach-file rbico-attach" rb-toggle="" rb-toggle-container=""><div class="btn-menu top-left" rb-toggle-menu=""><div class="btn-menu-item rbico-image rp"><div accept=".gif,.jpg,.jpeg,.png" class="c-ripple rp" ripple="" type="file"><input accept=".gif,.jpg,.jpeg,.png" multiple="multiple" onclick="this.value = null" size="28" style="position: absolute;top:0;left:0;right:0;bottom:0;opacity: 0;z-index: 100;" type="file"/><div class="c-ripple"></div></div><span class="btn-menu-item-text" rb-localize="upload_photo">تصویر</span></div><div class="btn-menu-item rbico-videocamera rp"><div accept=".mp4" class="c-ripple rp" ripple="" type="file"><input accept=".mp4" onclick="this.value = null" size="28" style="position: absolute;top:0;left:0;right:0;bottom:0;opacity: 0;z-index: 100;" type="file"/><div class="c-ripple"></div></div><span class="btn-menu-item-text" rb-localize="upload_video">ویدئو</span></div><div class="btn-menu-item rbico-music1 rp"><div accept=".mp3" class="c-ripple rp" ripple="" type="file"><input accept=".mp3" onclick="this.value = null" size="28" style="position: absolute;top:0;left:0;right:0;bottom:0;opacity: 0;z-index: 100;" type="file"/><div class="c-ripple"></div></div><span class="btn-menu-item-text" rb-localize="upload_music">موسیقی</span></div><div class="btn-menu-item rbico-document rp"><div class="c-ripple rp" ripple="" type="file"><input multiple="multiple" onclick="this.value = null" size="28" style="position: absolute;top:0;left:0;right:0;bottom:0;opacity: 0;z-index: 100;" type="file"/><div class="c-ripple"></div></div><span class="btn-menu-item-text" rb-localize="upload_document">فایل</span></div><!-- --><div class="btn-menu-item rbico-location rp"><div class="c-ripple rp" ripple=""><div class="c-ripple"></div></div><span class="btn-menu-item-text" rb-localize="send_location">موقعیت مکانی</span></div><div class="btn-menu-item rbico-videocamera rp"><div class="c-ripple rp" ripple=""><div class="c-ripple"></div></div><span class="btn-menu-item-text" rb-localize="send_live">پخش زنده از دستگاه خارجی</span></div></div></div><div class="record-time" id="record-time"></div></div></div><button class="btn-circle btn-corner z-depth-1 bubbles-go-down rbico-arrow_down rp"><div class="c-ripple rp" ripple=""><div class="c-ripple"></div></div><span class="badge badge-24 badge-primary" hidden="">0</span></button><button class="btn-icon rbico-delete danger btn-circle z-depth-1 btn-record-cancel rp"><div class="c-ripple"></div></button><div class="btn-send-container"><div class="record-ripple" rb-tone-analizer=""></div><button class="btn-icon rbico-none btn-circle z-depth-1 btn-send animated-button-icon rp record"><span class="rbico rbico-schedule" hidden=""></span><span class="rbico rbico-check" hidden=""></span><span class="rbico rbico-send" hidden=""></span><span class="rbico rbico-microphone"></span><div class="rr c-ripple rp" hidden="" ripple=""><div class="c-ripple"></div></div><div class="tt c-ripple rp" ripple=""><div class="c-ripple"></div></div></button></div><div class="chat-input-wrapper selection-wrapper fake-wrapper"><div class="selection-container"><button class="btn-icon rbico-close"></button><div class="selection-container-count"><span rb-pluralize="" when="confirm_modal_delete_X_messages"></span></div><button class="btn-primary btn-transparent text-bold selection-container-forward rbico-forward rp" disabled="true"><div class="c-ripple"></div><span rb-localize="message_action_forward">باز ارسال</span></button><button class="btn-primary btn-transparent danger text-bold selection-container-delete rbico-delete rp" disabled="true"><div class="c-ripple"></div><span rb-localize="message_action_delete">حذف</span></button></div></div></div>
+<div class="autocomplete-helper z-depth-1 stickers-helper" rb-composer-dropdown=""><div class="scrollable is-mention scrollable-y"><!-- --><!-- --><!-- --><!-- --></div></div>
+</h3></html>
